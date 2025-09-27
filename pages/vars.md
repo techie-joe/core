@@ -10,8 +10,10 @@ permalink: vars
 
 ---
 
-{{ updated_at }}
-{{ site.updated_at }}
+```yml
+manual_update_at: {{ manual_update_at }}
+site.manual_update_at: {{ site.manual_update_at }}
+```
 
 ---
 

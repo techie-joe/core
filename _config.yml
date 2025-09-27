@@ -1,0 +1,59 @@
+# Main Configurations
+
+  # theme: jekyll-theme-neo
+
+  remote_theme: techie-joe/core
+  # the location of the remote_theme.
+
+  title: Core template
+  description: Core is a classless website template.
+  nickname: Core
+  # title: # the title of your site.
+  # description: # a short description of your site's purpose.
+  # nickname: # a shortname for your site.
+
+  plugins:
+  - jekyll-remote-theme
+  # - jekyll-paginate
+  # - jekyll-sitemap
+  # add jekyll-remote-theme to the existing plugins list if you already have one.
+
+  theme_color: '#222'
+  color_scheme: 'light dark'
+  # favicon: favicon.ico
+  # manifest: manifest.json
+
+  sass:
+    style: compressed
+
+  exclude:
+  - ".github"
+  - ".gitignore"
+  - CNAME
+  - ".sass-cache"
+  - ".jekyll-cache"
+  - ".jekyll-metadata"
+  - "*.gem"
+  - "*.gemspec"
+  - Gemfile
+  - Gemfile.lock
+  - ".bundle"
+  - vendor
+  - ".backup"
+  - ".localhost"
+  # exclude these files from production site.
+
+# Custom Configurations
+
+  manual_update_at: 2025-09-25 11:06:35 +0000
+  # manually record the time the site is updated.
+
+  show_downloads: true # true or false (unquoted).
+  # indicate whether to provide a download URL.
+
+  # google_analytics: # your Google Analytics tracking ID.
+  # to track your website using Google Analytics.
+
+  # github:
+    # zip_url: http://example.com/download.zip
+    # another_url: another_value

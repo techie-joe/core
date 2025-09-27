@@ -14,12 +14,13 @@ You can write your content in Markdown or HTML, and your site will be built dire
 
 ```yml
 remote_theme: techie-joe/core
+# the location of the remote_theme.
 
 plugins:
 - jekyll-remote-theme
 # add jekyll-remote-theme to the existing plugins list if you already have one.
 
-updated_at: 2025-09-25 11:06:35 +0000
+manual_update_at: 2025-09-25 11:06:35 +0000
 # manually record the time the site is updated.
 ```
 
@@ -28,19 +29,19 @@ updated_at: 2025-09-25 11:06:35 +0000
 Core will respect the following variables, if set in your site's `_config.yml`:
 
 ```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
+title: # the title of your site.
+description: # a short description of your site's purpose.
+nickname: # a shortname for your site.
 ```
 
 Additionally, you may choose to set the following optional variables:
 
 ```yml
-show_downloads: ["true" or "false" (unquoted)]
+show_downloads: # true or false (unquoted).
 # indicate whether to provide a download URL.
 
-google_analytics: [Your Google Analytics tracking ID]
-# fill in your Google Analytics ID to track your website
-# using Google Analytics.
+google_analytics: # your Google Analytics tracking ID.
+# to track your website using Google Analytics.
 ```
 
 ### Stylesheet
@@ -82,7 +83,7 @@ Templates often rely on URLs supplied by GitHub such as links to your repository
     ```yml
     github:
         zip_url: http://example.com/download.zip
-        # another_url: another value
+        # another_url: another_value
     ```
 3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
 
