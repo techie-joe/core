@@ -125,13 +125,15 @@ organization_members : {{ site.github.organization_members }}
 ###### site.github.license
 
 ```yml
-{% for v in site.github.license %}{{ v[0] }}: {{ v[1] }}{% endfor %}
+{% for v in site.github.license %}{{ v[0] }}: {{ v[1] }}
+{% endfor %}
 ```
 
 ###### site.github.owner
 
 ```yml
-{% for v in site.github.owner %}{{ v[0] }}: {{ v[1] }}{% endfor %}
+{% for v in site.github.owner %}{{ v[0] }}: {{ v[1] }}
+{% endfor %}
 ```
 
 ###### site.github.latest_release
@@ -142,7 +144,8 @@ organization_members : {{ site.github.organization_members }}
 {%- if v[0]!='author' %}{{ v[0] }}: {{ v[1] }}
 {%- else -%}
 author:
-  {% for v in site.github.latest_release.author %}{{ v[0] }}: {{ v[1] }}{% endfor %}
+  {% for v in site.github.latest_release.author %}{{ v[0] }}: {{ v[1] }}
+  {% endfor %}
 {%- endif -%}
 {%- endfor %}
 {%- else -%}
@@ -153,41 +156,59 @@ author:
 ###### site.github.versions
 
 ```yml
-{% for v in site.github.versions %}{{ v[0] }}: {{ v[1] }}{% endfor %}
+{% for v in site.github.versions %}{{ v[0] }}: {{ v[1] }}
+{% endfor %}
 ```
 
 ###### site.sass
 
 ```yml
-{% for v in site.sass %}{{ v[0] }}: {{ v[1] }}{% endfor %}
+{% for v in site.sass %}{{ v[0] }}: {{ v[1] }}
+{% endfor %}
 ```
 
 ###### site.defaults
 
 ```yml
 size: {{ site.defaults.size | default:0 }}
-{% for v in site.defaults %}{{ v[0] }}: {{ v[1] | jsonify }}{% endfor %}
+{% for v in site.defaults -%}
+-
+  {{ v[0] }}: {{ v[1] | jsonify }}
+  {{ v | jsonify }}
+{% endfor %}
 ```
 
 ###### site.data
 
 ```yml
 size: {{ site.data.size | default:0 }}
-{% for v in site.data %}{{ v[0] }}: {{ v[1] | jsonify }}{% endfor %}
+{% for data in site.data -%}
+-
+  {{ data[0] }}: {{ data[1] | jsonify }}
+  {{ data | jsonify }}
+{% endfor %}
 ```
 
 ###### site.tags
 
 ```yml
 size: {{ site.tags.size | default:0 }}
-{% for v in site.tags %}{{ v[0] }}: {{ v[1] | jsonify }}{% endfor %}
+{% for tag in site.tags -%}
+-
+  {{ tag[0] }}: {{ tag[1] | size }} posts
+  {{ tag | jsonify }}
+{% endfor %}
 ```
 
 ###### site.categories
 
 ```yml
 size: {{ site.categories.size | default:0 }}
-{% for v in site.categories %}{{ v[0] }}: {{ v[1] | jsonify }}{% endfor %}
+{% for category in site.categories -%}
+-
+  {{ category[0] }}: {{ category[1] | jsonify }}
+  {{ category | jsonify }}
+{%- endfor %}
 ```
 
 ###### site.collections
@@ -195,7 +216,7 @@ size: {{ site.categories.size | default:0 }}
 ```yml
 size: {{ site.collections.size }}
 {% for collection in site.collections -%}
-- ---
+-
   label:  {{ collection.label }}
   relative_directory : {{ collection.relative_directory }}
   directory  : {{ collection.directory }}
@@ -211,7 +232,7 @@ size: {{ site.collections.size }}
 ```yml
 size: {{ site.documents.size | default:0 }}
 {% for file in site.documents -%}
-- ---
+-
   collection : {{ file.collection }}
   url        : {{ file.url }}
 {%- endfor %}
@@ -222,7 +243,7 @@ size: {{ site.documents.size | default:0 }}
 ```yml
 size: {{ site.static_files.size | default:0 }}
 {% for file in site.static_files -%}
-- ---
+-
   basename      : {{ file.basename }}
   name          : {{ file.name }}
   path          : {{ file.path }}
@@ -236,7 +257,7 @@ size: {{ site.static_files.size | default:0 }}
 ```yml
 size: {{ site.posts.size | default:0 }}
 {% for post in site.posts -%}
-- ---
+-
   title    : {{ post.title }}
   date     : {{ post.date }}
   layout   : {{ post.layout }}
@@ -265,7 +286,7 @@ size: {{ site.posts.size | default:0 }}
 ```yml
 size: {{ site.related_posts.size | default:0 }}
 {% for post in site.related_posts -%}
-- ---
+-
   {% for v in post %}{{ v[0] }}: {{ v[1] | jsonify }}{% endfor %}
 {%- endfor %}
 ```
@@ -275,7 +296,7 @@ size: {{ site.related_posts.size | default:0 }}
 ```yml
 size: {{ site.pages.size | default:0 }}
 {% for page in site.pages -%}
-- ---
+-
   title     : {{ page.title }}
   url       : {{ page.url }}
   path      : {{ page.path }}
