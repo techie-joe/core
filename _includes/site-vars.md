@@ -48,10 +48,12 @@ quiet         : {{ site.quiet }}
 profile       : {{ site.profile }}
 incremental   : {{ site.incremental }}
 lsi           : {{ site.lsi }}
+
 strict_front_matter : {{ site.strict_front_matter }}
 excerpt_separator   : {{ site.excerpt_separator | jsonify }}
 disable_disk_cache  : {{ site.disable_disk_cache }}
 ignore_theme_config : {{ site.ignore_theme_config }}
+
 keep_files    : {{ site.keep_files | jsonify }}
 include       : {{ site.include | jsonify }}
 exclude       : {{ site.exclude | jsonify }}
@@ -123,129 +125,118 @@ organization_members : {{ site.github.organization_members }}
 ###### site.github.license
 
 ```yml
-{% for v in site.github.license -%}
-{{ v[0] }}: {{ v[1] }}
-{% endfor %}
+{% for v in site.github.license %}{{ v[0] }}: {{ v[1] }}{% endfor %}
 ```
 
 ###### site.github.owner
 
 ```yml
-{% for v in site.github.owner -%}
-{{ v[0] }}: {{ v[1] }}
-{% endfor %}
+{% for v in site.github.owner %}{{ v[0] }}: {{ v[1] }}{% endfor %}
 ```
 
 ###### site.github.latest_release
 
 ```yml
-{% if site.github.latest_release %}
-{% for v in site.github.latest_release %}{% if v[0]!='author' -%}
-{{ v[0] }}: {{ v[1] }}
-{% endif %}{% endfor %}
+{% if site.github.latest_release -%}
+{%- for v in site.github.latest_release -%}
+{%- if v[0]!='author' %}{{ v[0] }}: {{ v[1] }}
+{%- else -%}
 author:
-  {% for v in site.github.latest_release.author -%}
-  {{ v[0] }}: {{ v[1] }}
-  {% endfor %}
-{% else %}
+  {% for v in site.github.latest_release.author %}{{ v[0] }}: {{ v[1] }}{% endfor %}
+{%- endif -%}
+{%- endfor %}
+{%- else -%}
 # no release
-{% endif %}
+{%- endif %}
 ```
 
 ###### site.github.versions
 
 ```yml
-{% for v in site.github.versions -%}
-{{ v[0] }}: {{ v[1] }}
-{% endfor %}
+{% for v in site.github.versions %}{{ v[0] }}: {{ v[1] }}{% endfor %}
 ```
 
 ###### site.sass
 
 ```yml
-sass_dir: {{ site.sass_dir }}
-{% for v in site.sass -%}
-{{ v[0] }}: {{ v[1] }}
-{% endfor %}
+{% for v in site.sass %}{{ v[0] }}: {{ v[1] }}{% endfor %}
 ```
 
 ###### site.defaults
 
 ```yml
 size: {{ site.defaults.size | default:0 }}
-[{% for v in site.defaults %}
-- {{ v[0] }}: {{ v[1] }}
-{% endfor %}]
+{% for v in site.defaults %}{{ v[0] }}: {{ v[1] | jsonify }}{% endfor %}
 ```
 
 ###### site.data
 
 ```yml
 size: {{ site.data.size | default:0 }}
-{{ site.data | jsonify }}
+{% for v in site.data %}{{ v[0] }}: {{ v[1] | jsonify }}{% endfor %}
 ```
 
 ###### site.tags
 
 ```yml
 size: {{ site.tags.size | default:0 }}
-[{% for tag in site.tags %}
-- {{ tag | jsonify }}
-{% endfor %}]
+{% for v in site.tags %}{{ v[0] }}: {{ v[1] | jsonify }}{% endfor %}
 ```
 
 ###### site.categories
 
 ```yml
 size: {{ site.categories.size | default:0 }}
-{{ site.categories | jsonify }}
+{% for v in site.categories %}{{ v[0] }}: {{ v[1] | jsonify }}{% endfor %}
 ```
 
 ###### site.collections
 
 ```yml
 size: {{ site.collections.size }}
-{% for collection in site.collections %}
--
+{% for collection in site.collections -%}
+- ---
   label:  {{ collection.label }}
   relative_directory : {{ collection.relative_directory }}
-  directory : {{ collection.directory }}
-  permalink : {{ collection.permalink }}
-  output    : {{ collection.output }}
-  files     : size: {{ collection.files.size | default:0 }}
-  docs      : size: {{ collection.docs.size | default:0 }}
-{% endfor %}
+  directory  : {{ collection.directory }}
+  permalink  : {{ collection.permalink }}
+  output     : {{ collection.output }}
+  files.size : {{ collection.files.size | default:0 }}
+  docs.size  : {{ collection.docs.size | default:0 }}
+{%- endfor %}
 ```
 
 ###### site.documents
 
 ```yml
 size: {{ site.documents.size | default:0 }}
-[{% for file in site.documents %}
-- {{ file.collection }}: url: {{ file.url }}
-{% endfor %}]
+{% for file in site.documents -%}
+- ---
+  collection : {{ file.collection }}
+  url        : {{ file.url }}
+{%- endfor %}
 ```
 
 ###### site.static_files
 
 ```yml
 size: {{ site.static_files.size | default:0 }}
-[{% for file in site.static_files -%}
--
+{% for file in site.static_files -%}
+- ---
   basename      : {{ file.basename }}
   name          : {{ file.name }}
   path          : {{ file.path }}
   extname       : {{ file.extname }}
   modified_time : {{ file.modified_time }}
-{% endfor %}]
+{%- endfor %}
 ```
 
 ###### site.posts
 
 ```yml
 size: {{ site.posts.size | default:0 }}
-[{% for post in site.posts %}
--
+{% for post in site.posts -%}
+- ---
   title    : {{ post.title }}
   date     : {{ post.date }}
   layout   : {{ post.layout }}
@@ -258,32 +249,36 @@ size: {{ site.posts.size | default:0 }}
   path          : {{ post.path }}
   relative_path : {{ post.relative_path }}
 
-  content : size: {{ post.content.size | default:0 }}
-  output  : size: {{ post.output.size | default:0 }}
-  excerpt : {{ post.excerpt | jsonify }}
+  excerpt       : {{ post.excerpt | jsonify }}
+  content.size  : {{ post.content.size | default:0 }}
+  output.size   : {{ post.output.size | default:0 }}
 
   draft      : {{ post.draft }}
   collection : {{ post.collection }}
   categories : {{ post.categories | jsonify }}
   tags       : {{ page.tags | jsonify }}
-{% endfor %}]
+{%- endfor %}
 ```
 
 ###### site.related_posts
 
 ```yml
 size: {{ site.related_posts.size | default:0 }}
+{% for post in site.related_posts -%}
+- ---
+  {% for v in post %}{{ v[0] }}: {{ v[1] | jsonify }}{% endfor %}
+{%- endfor %}
 ```
 
 ###### site.pages
 
 ```yml
 size: {{ site.pages.size | default:0 }}
-[{% for page in site.pages -%}
--
+{% for page in site.pages -%}
+- ---
   title     : {{ page.title }}
   url       : {{ page.url }}
   path      : {{ page.path }}
   published : {{ page.published }}
-{% endfor %}]
+{% endfor %}
 ```

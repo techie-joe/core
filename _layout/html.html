@@ -4,6 +4,10 @@ name: html
 ---
 <!doctype html>
 <html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no-js {{ layout.name }}_layout">
+  <!--
+    path   : {{ page.path }}
+    layout : {{ page.layout }}
+  -->
   <head>
     <meta charset="{{ site.encoding | default: 'utf-8' }}" />
     {% seo %}
