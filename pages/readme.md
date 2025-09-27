@@ -5,4 +5,8 @@ permalink: readme
 layout: default
 ---
 
-{% include_relative ../README.md %}
+# {{ page.title }}
+
+{{ page.description }}
+
+---
