@@ -5,6 +5,4 @@ permalink: readme
 layout: default
 ---
 
-<!-- ask AI how to include README.md -->
-
-<!-- % include ../README.md %} -->
+{% include_relative ../README.md %}
