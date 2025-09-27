@@ -1,6 +1,6 @@
 # Main Configurations
 
-  remote_theme: techie-joe/core
+  # remote_theme: techie-joe/core
   # the location of the remote_theme.
 
   title: Core template
