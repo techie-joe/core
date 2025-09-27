@@ -8,7 +8,7 @@ permalink: posts
 
 > {{ page.description }}
 
-{% for p in site.posts %}- [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url + p.url }})
+{% for p in site.posts %}- [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})
 {% endif %}{% endfor %}
 
 &nbsp;  

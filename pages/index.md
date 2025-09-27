@@ -7,7 +7,7 @@ description: Pages on this site.
 
 > {{ page.description }}
 
-{% for p in site.pages %}{% if p.title and p.title != page.title %}- [{{ p.title }}]({{ site.github.url + p.url }})
+{% for p in site.pages %}{% if p.title and p.title != page.title %}- [{{ p.title }}]({{ site.github.url }}{{ p.url }})
 {% endif %}{% endfor %}
 
 &nbsp;  
