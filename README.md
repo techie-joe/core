@@ -10,7 +10,7 @@ The Core template is more like a blank canvas than a finished painting. It does 
 
 ## Using Core as a Jekyll theme for GitHub Pages
 
-You can write your content in Markdown or HTML, and your site will be built directly from the code in your repository. To use the theme, add the following to your site's `_config.yml`:
+You can write your content in Markdown or HTML, and your site will be built directly from the code in your repository. To use the template, add the following to your site's `_config.yml`:
 
 ```yml
 remote_theme: techie-joe/core
@@ -54,21 +54,21 @@ If you'd like to add your own custom styles:
     ```
 3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
-*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
+*Note: If you'd like to change the template's Sass variables, you must set new values before the `@import` line in your stylesheet.*
 
 ### Layouts
 
-If you'd like to change the theme's HTML layout:
+If you'd like to change the template's HTML layout:
 
-1. For some changes such as a custom `favicon`, you can add custom files in your local `_includes` folder. The files [provided with the theme](https://github.com/techie-joe/core/tree/master/_includes) provide a starting point and are included by the [original layout template](https://github.com/techie-joe/core/blob/master/_layouts/default.html).
-2. For more extensive changes, [copy the original template](https://github.com/techie-joe/core/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
+1. For some changes such as a custom `favicon`, you can add custom files in your local `_includes` folder. The files [provided with the template](https://github.com/techie-joe/core/tree/master/_includes) provide a starting point and are included by the [original layout template](https://github.com/techie-joe/core/blob/master/_layouts/default.html).
+2. For more extensive changes, [copy the original template](https://github.com/techie-joe/core/blob/master/_layouts/default.html) from the template's repository<br />(*Pro-tip: click "raw" to make copying easier*)
 3. Create a file called `/_layouts/default.html` in your site
 4. Paste the default layout content copied in the first step
 5. Customize the layout as you'd like
 
 ### Customizing Google Analytics code
 
-Google has released several iterations to their Google Analytics code over the years since this theme was first created. If you would like to take advantage of the latest code, paste it into `_includes/google-analytics.html` in your Jekyll site.
+Google has released several iterations to their Google Analytics code over the years since this template was first created. If you would like to take advantage of the latest code, paste it into `_includes/google-analytics.html` in your Jekyll site.
 
 ### Overriding GitHub-generated URLs
 
@@ -97,18 +97,18 @@ See the [open issues](https://github.com/techie-joe/core/issues) for a list of p
 
 Interested in contributing to Core template project? We'd love your help. Core is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
 
-### Previewing the theme locally
+### Previewing the template locally
 
-If you'd like to preview the theme locally (for example, in the process of proposing a change):
+If you'd like to preview the template locally (for example, in the process of proposing a change):
 
-1. Clone down the theme's repository (`git clone https://github.com/techie-joe/core`)
-2. `cd` into the theme's directory
+1. Clone down the template's repository (`git clone https://github.com/techie-joe/core`)
+2. `cd` into the template's directory
 3. Run `script/bootstrap` to install the necessary dependencies
 4. Run `bundle exec jekyll serve` to start the preview server
-5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
+5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the template
 
 ### Running tests
 
-The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.
+The template contains a minimal test suite, to ensure a site with the template would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.
 
 -->
