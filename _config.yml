@@ -17,6 +17,7 @@
 
   theme_color: '#222' # '#000'
   color_scheme: 'light dark' # 'light dark'
+  style: mallet # default style name
   # favicon: # favicon.ico
   # manifest: # manifest.json
 

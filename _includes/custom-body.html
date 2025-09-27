@@ -3,6 +3,6 @@
 
 {% include anchors.html %}
 {% include credit.html %}
-<script src="{{ site.github.url }}/assets/mallet/js/script.js?v={{ site.github.build_revision }}"></script>
+<script src="{{ site.github.url }}/assets/{{ page:style | default: site.style | default: 'core' }}/js/script.js?v={{ site.github.build_revision }}"></script>
 
 <!-- end custom body snippets -->
