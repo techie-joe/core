@@ -1,7 +1,7 @@
 # The Core template
 Core is a classless website template. A no-style, no-frills template – just clean markup, ready for your design.
 
-The Core template is more like a blank canvas than a finished painting. It does not require special classes to be applied to your HTML elements. The main objective is to let you apply your own design system, or layer your framework of choice on top. You can style any page by linking the stylesheet of your choice.
+The Core template is more like a blank canvas than a finished painting. It does not require special classes to be applied to your HTML elements. The main objective is to let you apply your own design system, or layer your framework of choice on top. You can style any page by linking to the stylesheet of your choice.
 
 > [!WARNING]  
 > **This project is under active development. Use with caution. Future update may break your site.**
@@ -18,6 +18,9 @@ remote_theme: techie-joe/core
 plugins:
 - jekyll-remote-theme
 # add jekyll-remote-theme to the existing plugins list if you already have one.
+
+updated_at: 2025-09-25 11:06:35 +0000
+# manually record the time the site is updated.
 ```
 
 ### Configuration variables
