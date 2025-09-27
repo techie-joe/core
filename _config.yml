@@ -1,7 +1,5 @@
 # Main Configurations
 
-  # theme: jekyll-theme-neo
-
   remote_theme: techie-joe/core
   # the location of the remote_theme.
 
@@ -16,12 +14,11 @@
   - jekyll-remote-theme
   # - jekyll-paginate
   # - jekyll-sitemap
-  # add jekyll-remote-theme to the existing plugins list if you already have one.
 
-  theme_color: '#222'
-  color_scheme: 'light dark'
-  # favicon: favicon.ico
-  # manifest: manifest.json
+  theme_color: '#222' # '#000'
+  color_scheme: 'light dark' # 'light dark'
+  # favicon: # favicon.ico
+  # manifest: # manifest.json
 
   sass:
     style: compressed

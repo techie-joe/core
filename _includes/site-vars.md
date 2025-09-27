@@ -1,29 +1,33 @@
 ###### site
 
 ```yml
+remote_theme : {{ site.remote_theme }}
+theme        : {{ site.theme }}
+
 title        : {{ site.title }}
 description  : {{ site.description }}
+nickname     : {{ site.nickname }}
 
-theme        : {{ site.theme }}
-remote_theme : {{ site.remote_theme }}
+manual_update_at : {{ site.manual_update_at }}
 
-author       : {{ site.author }}
+theme_color  : {{ site.theme_color }}
+color_scheme : {{ site.color_scheme }}
 favicon      : {{ site.favicon }}
 manifest     : {{ site.manifest }}
-color_scheme : {{ site.color_scheme }}
-theme_color  : {{ site.theme_color }}
-header       : {{ site.header }}
-cloudflare_analytics : {{ site.cloudflare_analytics }}
-google_analytics     : {{ site.google_analytics }}
 
+lang          : {{ site.lang }}
 encoding      : {{ site.encoding }}
-baseurl       : {{ site.baseurl }}
-url           : {{ site.url }}
+
 time          : {{ site.time }}
 timezone      : {{ site.timezone }}
-paginate_path : {{ site.paginate_path }}
+
+google_analytics     : {{ site.google_analytics }}
+cloudflare_analytics : {{ site.cloudflare_analytics }}
+
+baseurl       : {{ site.baseurl }}
+url           : {{ site.url }}
 permalink     : {{ site.permalink }}
-lang          : {{ site.lang }}
+paginate_path : {{ site.paginate_path }}
 
 source          : {{ site.source }}
 destination     : {{ site.destination }}
