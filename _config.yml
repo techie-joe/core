@@ -39,6 +39,8 @@
   - vendor
   - ".backup"
   - ".localhost"
+  - node_modules
+  - script
   # exclude these files from production site.
 
 # Custom Configurations

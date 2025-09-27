@@ -9,7 +9,7 @@ permalink: posts
 > {{ page.description }}
 
 {% for p in site.posts %}- [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})
-{% endif %}{% endfor %}
+{% endfor %}
 
 &nbsp;  
 &nbsp;  
