@@ -1,12 +1,12 @@
 # Main Configurations
 
-  # remote_theme: techie-joe/core
+  remote_theme: techie-joe/core
   # the location of the remote_theme.
 
   title: Core template
   description: Core is a classless website template.
   nickname: Core
-  # title: # the title of your site.
+  # title: # the title of your site (best without the punctuation dot).
   # description: # a short description of your site's purpose.
   # nickname: # a shortname for your site.
 

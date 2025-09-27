@@ -2,6 +2,7 @@
 title: Vars
 description: Variables on this site.
 permalink: vars
+layout: default
 ---
 
 # {{ page.title }}

@@ -1,4 +1,5 @@
 # The Core template
+
 Core is a classless website template. A no-style, no-frills template – just clean markup, ready for your design.
 
 The Core template is more like a blank canvas than a finished painting. It does not require special classes to be applied to your HTML elements. The main objective is to let you apply your own design system, or layer your framework of choice on top. You can style any page by linking to the stylesheet of your choice.
@@ -29,7 +30,7 @@ manual_update_at: 2025-09-25 11:06:35 +0000
 Core will respect the following variables, if set in your site's `_config.yml`:
 
 ```yml
-title: # the title of your site.
+title: # the title of your site (best without the punctuation dot).
 description: # a short description of your site's purpose.
 nickname: # a shortname for your site.
 ```
