@@ -49,12 +49,11 @@ google_analytics: # your Google Analytics tracking ID.
 
 If you'd like to add your own custom styles:
 
-1. Create a file called `/assets/css/style.scss` in your site
+1. Create a file called `/assets/custom/css/style.scss` in your site
 2. Add the following content to the top of the file, exactly as shown:
     ```scss
     ---
     ---
-
     @import "{{ site.theme }}";
     ```
 3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
