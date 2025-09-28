@@ -126,34 +126,29 @@ organization_members : {{ site.github.organization_members }}
 ###### site.github.license
 
 ```yml
-{% for v in site.github.license %}
-{{ v[0] }}: {{ v[1] }}
+{% for v in site.github.license %}{{ v[0] }}: {{ v[1] }}
 {%- endfor %}
 ```
 
 ###### site.github.owner
 
 ```yml
-{% for v in site.github.owner %}
-{{ v[0] }}: {{ v[1] }}
+{% for v in site.github.owner %}{{ v[0] }}: {{ v[1] }}
 {%- endfor %}
 ```
 
 ###### site.github.latest_release
 
 ```yml
-{%- if site.github.latest_release -%}
 {% for v in site.github.latest_release %}
-{%- if v[0]!='author' %}
-{{ v[0] }}: {{ v[1] }}
+{%- if v[0]!='author' %}{{ v[0] }}: {{ v[1] }}
 {%- else %}
 author:
-  {% for v in site.github.latest_release.author %}
-  {{ v[0] }}: {{ v[1] }}
+  {% for v in site.github.latest_release.author %}{{ v[0] }}: {{ v[1] }}
   {%- endfor %}
-{%- endif -%}
+{%- endif %}
 {%- endfor %}
-{%- else %}
+{%- if site.github.latest_release %}
 # no release
 {%- endif %}
 ```
@@ -161,16 +156,14 @@ author:
 ###### site.github.versions
 
 ```yml
-{% for v in site.github.versions %}
-{{ v[0] }}: {{ v[1] }}
+{% for v in site.github.versions %}{{ v[0] }}: {{ v[1] }}
 {%- endfor %}
 ```
 
 ###### site.sass
 
 ```yml
-{% for v in site.sass %}
-{{ v[0] }}: {{ v[1] }}
+{% for v in site.sass %}{{ v[0] }}: {{ v[1] }}
 {%- endfor %}
 ```
 
@@ -256,7 +249,7 @@ size: {{ site.static_files.size | default:0 }}
   path          : {{ file.path }}
   extname       : {{ file.extname }}
   modified_time : {{ file.modified_time }}
-{%- endfor %}
+{% endfor %}
 ```
 
 ###### site.posts
@@ -285,7 +278,7 @@ size: {{ site.posts.size | default:0 }}
   collection : {{ post.collection }}
   categories : {{ post.categories | jsonify }}
   tags       : {{ page.tags | jsonify }}
-{%- endfor %}
+{% endfor %}
 ```
 
 ###### site.related_posts
