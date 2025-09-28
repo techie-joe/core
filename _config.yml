@@ -1,5 +1,7 @@
 # Main Configurations
 
+  remote_theme: techie-joe/core
+
   title: Core template
   description: Core is a classless website template.
   nickname: Core
