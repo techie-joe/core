@@ -1,6 +1,6 @@
 ---
 title: Posts
-description: Posts on this site.
+description: Listing posts on this site.
 permalink: posts
 ---
 
@@ -10,9 +10,6 @@ permalink: posts
 
 {% for p in site.posts %}- [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})
 {% endfor %}
-
-&nbsp;  
-&nbsp;  
 
 ---
 

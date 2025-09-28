@@ -1,6 +1,7 @@
 ---
 title: Pages
-description: Pages on this site.
+description: Listing pages on this site.
+permalink: pages
 ---
 
 # {{ page.title }}
@@ -9,9 +10,6 @@ description: Pages on this site.
 
 {% for p in site.pages %}{% if p.title and p.title != page.title %}- [{{ p.title }}]({{ site.github.url }}{{ p.url }})
 {% endif %}{% endfor %}
-
-&nbsp;  
-&nbsp;  
 
 ---
 

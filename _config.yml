@@ -9,9 +9,11 @@
 
   theme_color: '#222' # '#000'
   color_scheme: 'light dark' # 'light dark'
-  style: mallet # default style name
   # favicon: # favicon.ico
   # manifest: # manifest.json
+
+  custom_css: mallet # default css name
+  custom_js: mallet # default js name
 
   sass:
     style: compressed
@@ -35,6 +37,7 @@
   - vendor
   - ".backup"
   - ".localhost"
+  - ".editorconfig"
   - node_modules
   - script
   # exclude these files from production site.

@@ -1,8 +1,8 @@
 ---
-title: Default demo page
+title: Demo (old)
 description: Demo page for a Jekyll theme.
-permalink: default
+permalink: demo-old
 ---
-_Default demo page_
+_Demo (old)_
 ---
 {% include demo-old.md %}

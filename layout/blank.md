@@ -1,6 +1,7 @@
 ---
-title: Home
-description: An introduction to the Core template.
+title: Blank layout
+description: The blank layout.
+layout: blank
 ---
 
 # {{ page.title }}

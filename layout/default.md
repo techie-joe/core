@@ -1,6 +1,7 @@
 ---
-title: Home
-description: An introduction to the Core template.
+title: Default layout
+description: The default layout.
+layout: default
 ---
 
 # {{ page.title }}

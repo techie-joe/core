@@ -1,7 +1,7 @@
 <!-- start custom head snippets -->
 <!-- customize with your own _includes/custom-head.html file -->
 
-<link id="_style" rel="stylesheet" href="{{ site.github.url }}/assets/{{ page:style | default: site.style | default: 'core' }}/css/style.css?v={{ site.github.build_revision }}" />
+<link id="_style" rel="stylesheet" href="{{ site.github.url }}/assets/{{ page:custom_css | default: site.custom_css | default: 'core' }}/css/style.css?v={{ site.github.build_revision }}" />
 {% include google-analytics.html %}
 
 <!--

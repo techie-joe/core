@@ -2,7 +2,7 @@
 
 ## Better control over contents
 
-![Small image](https://picsum.photos/id/299/400/300){: .centered.float-sm-right.m-sm-4 width=400 height=300 }
+![Small image](https://techie-joe.github.io/core/images/299-400x300.jpg){: .centered.float-sm-right.m-sm-4 width=400 height=300 }
 
 When ever you wish to enlarge the first letter of a paragraph, use <code class="nowrap">big-first</code>.
 To indent  a paragraph with an `indent`. Align paragraph using <code class="nowrap">text-justify</code>.
@@ -80,11 +80,15 @@ end
 Long, single-line `code blocks` should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
 
-## Images big and small
+### Small image
+
+![Octocat](https://techie-joe.github.io/core/images/octocat-64x64.jpg)
+
+### Large image
 
 Add full scale images, align them centered or float them left or right.
 
-![Large image](https://techie-joe.github.io/neo/images/2-1024x368.jpg){: .width-full.centered }
+![Large image](https://techie-joe.github.io/core/images/2-1024x368.jpg){: .width-full.centered }
 
 > Images for this demo came from [picsum.photos](https://picsum.photos/) and [unsplash](https://unsplash.com)
 {: .text-small }
