@@ -126,14 +126,16 @@ organization_members : {{ site.github.organization_members }}
 ###### site.github.license
 
 ```yml
-{% for v in site.github.license %}{{ v[0] }}: {{ v[1] }}
+{% for v in site.github.license %}
+{{ v[0] }}: {{ v[1] }}
 {%- endfor %}
 ```
 
 ###### site.github.owner
 
 ```yml
-{% for v in site.github.owner %}{{ v[0] }}: {{ v[1] }}
+{% for v in site.github.owner %}
+{{ v[0] }}: {{ v[1] }}
 {%- endfor %}
 ```
 
@@ -141,10 +143,12 @@ organization_members : {{ site.github.organization_members }}
 
 ```yml
 {% for v in site.github.latest_release %}
-{%- if v[0]!='author' %}{{ v[0] }}: {{ v[1] }}
+{%- if v[0]!='author' %}
+{{ v[0] }}: {{ v[1] }}
 {%- else %}
 author:
-  {% for v in site.github.latest_release.author %}{{ v[0] }}: {{ v[1] }}
+  {% for v in site.github.latest_release.author %}
+  {{ v[0] }}: {{ v[1] }}
   {%- endfor %}
 {%- endif %}
 {%- endfor %}
@@ -156,14 +160,16 @@ author:
 ###### site.github.versions
 
 ```yml
-{% for v in site.github.versions %}{{ v[0] }}: {{ v[1] }}
+{% for v in site.github.versions %}
+{{ v[0] }}: {{ v[1] }}
 {%- endfor %}
 ```
 
 ###### site.sass
 
 ```yml
-{% for v in site.sass %}{{ v[0] }}: {{ v[1] }}
+{% for v in site.sass %}
+{{ v[0] }}: {{ v[1] }}
 {%- endfor %}
 ```
 
@@ -297,10 +303,10 @@ size: {{ site.related_posts.size | default:0 }}
 size: {{ site.pages.size | default:0 }}
 {% for page in site.pages %}
 -
-  {% for v in page -%}
-  {% if v[0]=='content' -%}{{ v[0] }}: [{{ v[1].size }} characters]
-  {% else -%}{{ v[0] }}: {{ v[1] }}
-  {% endif -%}
+  {% for v in page %}
+  {%- if v[0]=='content' %}{{ v[0] }}: [{{ v[1].size }} characters]
+  {%- else %}{{ v[0] }}: {{ v[1] }}
+  {%- endif %}
   {%- endfor %}
 {%- endfor %}
 ```
