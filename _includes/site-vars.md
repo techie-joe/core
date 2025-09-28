@@ -297,9 +297,12 @@ size: {{ site.related_posts.size | default:0 }}
 size: {{ site.pages.size | default:0 }}
 {% for page in site.pages -%}
 -
-  title     : {{ page.title }}
-  url       : {{ page.url }}
-  path      : {{ page.path }}
-  published : {{ page.published }}
+  {% for v in page -%}
+  {%- if v[0]==='content' %}
+  {{ v[0] }}: {{ v[1] | jsonify }}
+  {%- else %}
+  {{ v[0] }}: {{ v[1] }}
+  {%- endif %}
+  {%- endfor %}
 {% endfor %}
 ```

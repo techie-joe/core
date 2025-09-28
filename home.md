@@ -16,10 +16,11 @@ permalink: home
 ## Pages
 
 {% for p in site.pages -%}
-{%- if p.path != page.path %}
+{%- if p.title && p.path != page.path %}
 - [{{ p.title | default:'(Untitled page)' }}]({{ site.github.url }}{{ p.url }})
 {%- endif %}
 {%- endfor %}
+{%- if site.pages.size == 0 %}_(No page at the moment)_{% endif -%}
 
 ## Posts
 
@@ -28,5 +29,6 @@ permalink: home
 - [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})
 {%- endif %}
 {%- endfor %}
+{%- if site.posts.size == 0 %}_(No post at the moment)_{% endif -%}
 
 ---
