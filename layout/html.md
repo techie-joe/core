@@ -8,9 +8,7 @@ layout: html
 
 {{ page.description }}
 
-```yml
-page.layout : {{ page.layout }}
-site.layout : {{ site.layout }}
-```
+{% include layout-vars.md %}
+{% include page-vars.md %}
 
 ---
