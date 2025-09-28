@@ -255,7 +255,7 @@ size: {{ site.static_files.size | default:0 }}
   path          : {{ file.path }}
   extname       : {{ file.extname }}
   modified_time : {{ file.modified_time }}
-{% endfor %}
+{%- endfor %}
 ```
 
 ###### site.posts
@@ -284,7 +284,7 @@ size: {{ site.posts.size | default:0 }}
   collection : {{ post.collection }}
   categories : {{ post.categories | jsonify }}
   tags       : {{ page.tags | jsonify }}
-{% endfor %}
+{%- endfor %}
 ```
 
 ###### site.related_posts
@@ -303,7 +303,7 @@ size: {{ site.related_posts.size | default:0 }}
 
 ```yml
 size: {{ site.pages.size | default:0 }}
-{% for page in site.pages %}
+{%- for page in site.pages %}
 -
   {%- for v in page %}
   {%- if v[0]=='content' %}
