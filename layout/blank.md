@@ -5,6 +5,6 @@ permalink: blank
 layout: blank
 ---
 {
-  "layout": {{ layout | jsonify | escape }},
-  "page": {{ page | jsonify | escape }}
+  "layout": {{ layout | jsonify }},
+  "page": {{ page | jsonify }}
 }

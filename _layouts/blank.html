@@ -1,4 +1,4 @@
 ---
 # blank document.
 ---
-{{ content | markdownify | strip_html }}
+{{ content | markdownify | strip_html | escape }}
