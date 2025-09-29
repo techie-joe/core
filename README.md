@@ -1,15 +1,29 @@
 # The Core template
 
-Core is a classless website template. A no-style, no-frills template – just clean markup, ready for your design.
+_Core is a classless website template. A no-style, no-frills template – just clean markup, ready for your design._
 
 The Core template is more like a blank canvas than a finished painting. It does not require special classes to be applied to your HTML elements. The main objective is to let you apply your own design system, or layer your framework of choice on top. You can style any page by linking to the stylesheet of your choice.
+
+**[Preview the theme to see what it looks like](https://techie-joe.github.io/core/preview) or [use it today](#usage).**
 
 > [!WARNING]  
 > **This project is under active development. Use with caution. Future update may break your site.**
 
 ---
 
-## Using Core as a Jekyll theme for GitHub Pages
+![Thumbnail of the Core template](thumbnail.png)
+
+---
+
+## Project philosophy
+
+The project is intended to make it quick and easy for users to build their website. The template should meet the need of vast majority of users out of the box, erring on simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). Needless to say, the theme should also look neat and tidy.
+
+---
+
+## Usage
+
+### Using Core as a Jekyll theme for GitHub Pages
 
 You can write your content in Markdown or HTML, and your site will be built directly from the code in your repository. To use the template, add the following to your site's `_config.yml`:
 
@@ -20,10 +34,9 @@ remote_theme: techie-joe/core
 plugins:
 - jekyll-remote-theme
 # add jekyll-remote-theme to the plugins list.
-
-manual_update_at: 2025-09-25 11:06:35 +0000
-# manually record the time the site is updated.
 ```
+
+## Customizing
 
 ### Configuration variables
 
@@ -91,17 +104,21 @@ Templates often rely on URLs supplied by GitHub such as links to your repository
 
 For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
 
-## Roadmap
+## Previewing
 
-See the [open issues](https://github.com/techie-joe/core/issues) for a list of proposed features (and known issues).
+If you'd like to preview your site on your computer (for example, in the process of proposing a change), you need to clone the template's repository (`git clone https://github.com/techie-joe/core`).
+
+### Preview with Gem
+
+Add the following to your site's `Gemfile`:
+
+    ```ruby
+    gem "github-pages", group: :jekyll_plugins
+    ```
 
 <!--
 
-## Contributing
-
-Interested in contributing to Core template project? We'd love your help. Core is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
-
-### Previewing the template locally
+## Previewing the template locally
 
 If you'd like to preview the template locally (for example, in the process of proposing a change):
 
@@ -111,8 +128,24 @@ If you'd like to preview the template locally (for example, in the process of pr
 4. Run `bundle exec jekyll serve` to start the preview server
 5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the template
 
-### Running tests
+-->
+
+<!--
+
+## Running tests
 
 The template contains a minimal test suite, to ensure a site with the template would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.
 
 -->
+
+<!--
+
+## Contributing
+
+Interested in contributing to Core template project? We'd love your help. Core is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
+
+-->
+
+## Roadmap
+
+See the [open issues](https://github.com/techie-joe/core/issues) for a list of proposed features (and known issues).

@@ -10,24 +10,17 @@ nickname     : {{ site.nickname }}
 
 theme_color  : {{ site.theme_color }}
 color_scheme : {{ site.color_scheme }}
-favicon      : {{ site.favicon }}
-manifest     : {{ site.manifest }}
-
 custom_style : {{ site.custom_style }}
 
 google_analytics     : {{ site.google_analytics }}
 cloudflare_analytics : {{ site.cloudflare_analytics }}
 
-manual_update_at : {{ site.manual_update_at }}
-
+time          : {{ site.time }}
 lang          : {{ site.lang }}
 encoding      : {{ site.encoding }}
 
-time          : {{ site.time }}
-timezone      : {{ site.timezone }}
-
-baseurl       : {{ site.baseurl }}
 url           : {{ site.url }}
+baseurl       : {{ site.baseurl }}
 permalink     : {{ site.permalink }}
 paginate_path : {{ site.paginate_path }}
 
