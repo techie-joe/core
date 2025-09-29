@@ -4,14 +4,4 @@ description: The blank layout.
 permalink: blank
 layout: blank
 ---
-
-# {{ page.title }}
-
-{{ page.description }}
-
----
-
-{% include layout-vars.md %}
-{% include page-vars.md %}
-
----
+{{ {"layout":layout,"page":page} | jsonify }}
