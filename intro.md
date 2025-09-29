@@ -1,6 +1,6 @@
 ---
-title: Info
+title: Intro
 description: Background information on the Core template.
-permalink: info
+permalink: intro
 ---
 {% include_relative README.md %}
