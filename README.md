@@ -64,11 +64,13 @@ If you'd like to add your own custom styles:
 
 1. Create a file called `/assets/custom/css/style.scss` in your site
 2. Add the following content to the top of the file, exactly as shown:
+
     ```scss
     ---
     ---
     @import "{{ site.theme }}";
     ```
+
 3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
 *Note: If you'd like to change the template's Sass variables, you must set new values before the `@import` line in your stylesheet.*
@@ -93,11 +95,13 @@ Templates often rely on URLs supplied by GitHub such as links to your repository
 
 1. Look at [the template source](https://github.com/techie-joe/core/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
 2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
+
     ```yml
     github:
         zip_url: http://example.com/download.zip
         # another_url: another_value
     ```
+
 3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
 
 *Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`.*
@@ -112,9 +116,9 @@ If you'd like to preview your site on your computer (for example, in the process
 
 Add the following to your site's `Gemfile`:
 
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
-    ```
+```ruby
+gem "github-pages", group: :jekyll_plugins
+```
 
 <!--
 

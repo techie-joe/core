@@ -82,7 +82,7 @@ Long, single-line `code blocks` should not wrap. They should horizontally scroll
 
 ### Small image
 
-![Octocat](https://techie-joe.github.io/core/images/octocat-64x64.jpg)
+![Octocat](https://techie-joe.github.io/core/images/core-64x64.jpg)
 
 ### Large image
 
