@@ -3,10 +3,10 @@
 name: html
 ---
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no_js {{ layout.name }}_layout">
+<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no_js {{ page.layout }}_layout">
   <!--
-    path   : {{ page.path }}
-    layout : {{ page.layout }}
+    page.path   : {{ page.path }}
+    page.layout : {{ page.layout }}
   -->
   <head>
     <meta charset="{{ site.encoding | default: 'utf-8' }}" />
