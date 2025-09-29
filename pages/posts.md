@@ -8,10 +8,16 @@ permalink: posts
 
 > {{ page.description }}
 
-{% for p in site.posts %}- [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})
-{% endfor %}
+{% for p in site.posts %}
+{%- if p.path != page.path %}
+- [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})
+{%- endif %}
+{%- endfor %}
+{%- if site.posts.size == 0 %}
+_(No post at the moment)_
+{%- endif %}
 
 ---
 
 {% include back.html %}
-<a href="{{ site.github.url }}" class="" title="Go to Home Page">Home</a>
+{% include gohome.html %}

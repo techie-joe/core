@@ -1,60 +1,55 @@
-# Main Configurations
+remote_theme: techie-joe/core
+# the location of the remote_theme.
 
-  remote_theme: techie-joe/core
+title: Core template
+description: Core is a classless website template.
+nickname: Core
+# title: # the title of your site (best without the punctuation dot).
+# description: # a short description of your site's purpose.
+# nickname: # a shortname for your site.
 
-  title: Core template
-  description: Core is a classless website template.
-  nickname: Core
-  # title: # the title of your site (best without the punctuation dot).
-  # description: # a short description of your site's purpose.
-  # nickname: # a shortname for your site.
+theme_color: '#222'
+color_scheme: light dark
 
-  theme_color: '#222' # '#000'
-  color_scheme: 'light dark' # 'light dark'
-  # favicon: # favicon.ico
-  # manifest: # manifest.json
+custom_style: core
+# default style
 
-  custom_css: mallet # default css name
-  custom_js: mallet # default js name
+sass:
+  style: compressed
 
-  sass:
-    style: compressed
+manual_update_at: 2025-09-25 11:06:35 +0000
+# manually record the time the site is updated.
 
-  # plugins:
-  # - jekyll-paginate
-  # - jekyll-sitemap
+show_downloads: true # true or false (unquoted).
+# indicate whether to provide a download URL.
 
-  exclude:
-  - ".github"
-  - ".gitignore"
-  - CNAME
-  - ".sass-cache"
-  - ".jekyll-cache"
-  - ".jekyll-metadata"
-  - "*.gem"
-  - "*.gemspec"
-  - Gemfile
-  - Gemfile.lock
-  - ".bundle"
-  - vendor
-  - ".backup"
-  - ".localhost"
-  - ".editorconfig"
-  - node_modules
-  - script
-  # exclude these files from production site.
+# google_analytics: # your Google Analytics tracking ID.
+# to track your website using Google Analytics.
 
-# Custom Configurations
+# github:
+  # zip_url: http://example.com/download.zip
+  # another_url: another_value
 
-  manual_update_at: 2025-09-25 11:06:35 +0000
-  # manually record the time the site is updated.
+# plugins:
+# - jekyll-paginate
+# - jekyll-sitemap
 
-  show_downloads: true # true or false (unquoted).
-  # indicate whether to provide a download URL.
-
-  # google_analytics: # your Google Analytics tracking ID.
-  # to track your website using Google Analytics.
-
-  # github:
-    # zip_url: http://example.com/download.zip
-    # another_url: another_value
+exclude: # exclude these files from production site.
+- ".editorconfig"
+- ".github"
+- ".gitignore"
+- node_modules
+- script
+- ".sass-cache"
+- ".jekyll-cache"
+- ".jekyll-metadata"
+- "*.gem"
+- "*.gemspec"
+- Gemfile
+- Gemfile.lock
+- ".bundle"
+- vendor
+- CNAME
+- "*.ignore"
+- ".backup"
+- ".localhost"

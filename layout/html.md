@@ -8,6 +8,8 @@ layout: html
 
 {{ page.description }}
 
+---
+
 {% include layout-vars.md %}
 {% include page-vars.md %}
 

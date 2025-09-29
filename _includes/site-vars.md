@@ -13,8 +13,10 @@ color_scheme : {{ site.color_scheme }}
 favicon      : {{ site.favicon }}
 manifest     : {{ site.manifest }}
 
-custom_css   : {{ site.custom_css }}
-custom_js    : {{ site.custom_js }}
+custom_style : {{ site.custom_style }}
+
+google_analytics     : {{ site.google_analytics }}
+cloudflare_analytics : {{ site.cloudflare_analytics }}
 
 manual_update_at : {{ site.manual_update_at }}
 
@@ -23,9 +25,6 @@ encoding      : {{ site.encoding }}
 
 time          : {{ site.time }}
 timezone      : {{ site.timezone }}
-
-google_analytics     : {{ site.google_analytics }}
-cloudflare_analytics : {{ site.cloudflare_analytics }}
 
 baseurl       : {{ site.baseurl }}
 url           : {{ site.url }}
@@ -147,7 +146,7 @@ organization_members : {{ site.github.organization_members }}
 {{ v[0] }}: {{ v[1] }}
 {%- else %}
 author:
-  {% for v in site.github.latest_release.author %}
+  {%- for v in site.github.latest_release.author %}
   {{ v[0] }}: {{ v[1] }}
   {%- endfor %}
 {%- endif %}

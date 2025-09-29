@@ -19,7 +19,7 @@ remote_theme: techie-joe/core
 
 plugins:
 - jekyll-remote-theme
-# add jekyll-remote-theme to the existing plugins list if you already have one.
+# add jekyll-remote-theme to the plugins list.
 
 manual_update_at: 2025-09-25 11:06:35 +0000
 # manually record the time the site is updated.
@@ -54,7 +54,7 @@ If you'd like to add your own custom styles:
     ```scss
     ---
     ---
-    @import "core";
+    @import "{{ site.theme }}";
     ```
 3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 

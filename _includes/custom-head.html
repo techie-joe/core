@@ -1,10 +1,8 @@
 <!-- start custom head snippets -->
 <!-- customize with your own _includes/custom-head.html file -->
 
-<link id="_style" rel="stylesheet" href="{{ site.github.url }}/assets/{{ page:custom_css | default: site.custom_css | default: 'core' }}/css/style.css?v={{ site.github.build_revision }}" />
-{% include google-analytics.html %}
+<link id="_style" rel="stylesheet" href="{{ site.github.url }}/assets/{{ page:custom_style | default: site.custom_style | default: 'core' }}/css/style.css?v={{ site.github.build_revision }}" />
 
-<!--
-% include favicon.html %}
--->
+<!-- % include manifest.html %} -->
+
 <!-- end custom head snippets -->

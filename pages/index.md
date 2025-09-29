@@ -8,10 +8,16 @@ permalink: pages
 
 > {{ page.description }}
 
-{% for p in site.pages %}{% if p.title and p.title != page.title %}- [{{ p.title }}]({{ site.github.url }}{{ p.url }})
-{% endif %}{% endfor %}
+{% for p in site.pages %}
+{%- if p.title && p.path != page.path %}
+- [{{ p.title | default:'(Untitled page)' }}]({{ site.github.url }}{{ p.url }})
+{%- endif %}
+{%- endfor %}
+{%- if site.pages.size == 0 %}
+_(No page at the moment)_
+{%- endif %}
 
 ---
 
 {% include back.html %}
-<a href="{{ site.github.url }}" class="" title="Go to Home Page">Home</a>
+{% include gohome.html %}
