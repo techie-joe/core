@@ -62,7 +62,7 @@ google_analytics: # your Google Analytics tracking ID.
 
 If you'd like to add your own custom styles:
 
-1. Create a file called `/assets/custom/css/style.scss` in your site
+1. Create a file called `/assets/custom/css/style.scss` in your site.
 2. Add the following content to the top of the file, exactly as shown:
 
     ```scss
@@ -71,7 +71,7 @@ If you'd like to add your own custom styles:
     @import "{{ site.theme }}";
     ```
 
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
+3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line.
 
 *Note: If you'd like to change the template's Sass variables, you must set new values before the `@import` line in your stylesheet.*
 
@@ -80,10 +80,10 @@ If you'd like to add your own custom styles:
 If you'd like to change the template's HTML layout:
 
 1. For some changes such as a custom `favicon`, you can add custom files in your local `_includes` folder. The files [provided with the template](https://github.com/techie-joe/core/tree/master/_includes) provide a starting point and are included by the [original layout template](https://github.com/techie-joe/core/blob/master/_layouts/default.html).
-2. For more extensive changes, [copy the original template](https://github.com/techie-joe/core/blob/master/_layouts/default.html) from the template's repository<br />(*Pro-tip: click "raw" to make copying easier*)
-3. Create a file called `/_layouts/default.html` in your site
-4. Paste the default layout content copied in the first step
-5. Customize the layout as you'd like
+2. For more extensive changes, [copy the original template](https://github.com/techie-joe/core/blob/master/_layouts/default.html) from the template's repository.<br />(*Pro-tip: click "raw" to make copying easier*)
+3. Create a file called `/_layouts/default.html` in your site.
+4. Paste the default layout content copied in the first step.
+5. Customize the layout as you'd like.
 
 ### Customizing Google Analytics code
 
