@@ -181,7 +181,7 @@ You can create links to [pages]({{ site.baseurl }}/pages/ "View pages").
 {%- endif %}
 {%- endfor %}
 
-{%- if site.posts.size > 0 %}
+{% if site.posts.size > 0 %}
 ... or make a list of all the [posts]({{ site.baseurl }}/posts/ "View posts") you have:
 {%- endif %}
 {% for p in site.posts %}
