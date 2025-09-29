@@ -2,6 +2,7 @@
 title: Home
 description: An introduction to the Core template.
 permalink: home
+layout: home
 ---
 
 # {{ page.title }}

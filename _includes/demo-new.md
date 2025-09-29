@@ -174,20 +174,26 @@ Add full scale images, align them centered or float them left or right.
 
 ## Links
 
-You can create links to [pages]({{ site.baseurl }}/pages/ "Pages").
+You can create links to [pages]({{ site.baseurl }}/pages/ "View pages").
+{% for p in site.pages %}
+{%- if p.title && p.path != page.path %}
+- [{{ p.title | default:'(Untitled page)' }}]({{ site.github.url }}{{ p.url }})
+{%- endif %}
+{%- endfor %}
 
-{% if site.posts.size > 0 %}
-
-... or make a list of all the [posts]({{ site.baseurl }}/posts/ "Posts") you have:
-
+{%- if site.posts.size > 0 %}
+... or make a list of all the [posts]({{ site.baseurl }}/posts/ "View posts") you have:
+{%- endif %}
 {% for p in site.posts %}
-{% if p.title %}- [{{ p.title }}]({{ site.github.url }}{{ p.url }})
-{% else %}- [(Untitled post)]({{ site.github.url }}{{ p.url }}){% endif %}
-{% endfor %}
+{%- if p.path != page.path %}
+- [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})
+{%- endif %}
+{%- endfor %}
+{%- if site.posts.size == 0 %}
+_(No post at the moment)_
+{%- endif %}
 
-{% endif %}
-
-If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title="Page not found">an error page</a>.
+If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title="The error page">an error page</a>.
 
 ## Button links
 

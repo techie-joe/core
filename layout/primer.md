@@ -1,9 +1,8 @@
 ---
-title: Preview (old)
+title: Preview Primer
 description: Preview of a Jekyll theme.
-permalink: preview-old
 ---
 
 _{{ page.title }}_
 
-{% include demo-old.md %}
+{% include demo-new.md %}
