@@ -6,7 +6,7 @@ permalink: pages
 
 # {{ page.title }}
 
-> {{ page.description }}
+{{ page.description }}
 
 {% for p in site.pages %}
 {%- if p.title && p.path != page.path %}

@@ -4,7 +4,7 @@ _Core is a classless website template. A no-style, no-frills template – just c
 
 The Core template is more like a blank canvas than a finished painting. It does not require special classes to be applied to your HTML elements. The main objective is to let you apply your own design system, or layer your framework of choice on top. You can style any page by linking to the stylesheet of your choice.
 
-**<a href="https://techie-joe.github.io/core/preview" title="https://techie-joe.github.io/core/preview" target="_blank">Preview the theme to see what it looks like</a> or [use it today](#usage).**
+**<a href="https://techie-joe.github.io/core" title="https://techie-joe.github.io/core" target="_blank">Preview the theme to see what it looks like</a> or [use it today](#usage).**
 
 > [!WARNING]  
 > **This project is under active development. Use with caution. Future update may break your site.**
