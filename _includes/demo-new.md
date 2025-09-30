@@ -175,7 +175,7 @@ Add full scale images, align them centered or float them left or right.
 ## Links
 
 You can create links to [pages]({{ site.baseurl }}/pages/ "View pages").
-{%- if sorted_pages.size > 0 %}
+{%- if site.pages.size > 0 %}
 {% assign sorted_pages = site.pages | sort: "title" -%}
 {% for p in sorted_pages %}
 - [{{ p.title | default:'(Untitled page)' }}]({{ site.github.url }}{{ p.url }})
@@ -189,7 +189,7 @@ You can create links to [pages]({{ site.baseurl }}/pages/ "View pages").
 - [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})
 {%- endfor %}
 {%- else %}
-_(No post at the moment)_
+_(Nothing has been posted)_
 {%- endif %}
 
 If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title="The error page">an error page</a>.

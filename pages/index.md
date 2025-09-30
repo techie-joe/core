@@ -8,7 +8,7 @@ permalink: pages
 
 {{ page.description }}
 
-{%- if sorted_pages.size > 0 %}
+{%- if site.pages.size > 0 %}
 {% assign sorted_pages = site.pages | sort: "title" -%}
 {% for p in sorted_pages %}
 {%- if p.title and p.path != page.path %}
@@ -16,7 +16,7 @@ permalink: pages
 {%- endif %}
 {%- endfor %}
 {%- else %}
-_(No page at the moment)_
+_(Nothing has been posted)_
 {%- endif %}
 
 ---
