@@ -175,14 +175,14 @@ Add full scale images, align them centered or float them left or right.
 ## Links
 
 You can create links to [pages]({{ site.baseurl }}/pages/ "View pages").
-{%- if site.pages.size > 0 %}
+{% if site.pages.size > 0 %}
 {% assign sorted_pages = site.pages | sort: "title" -%}
 {% for p in sorted_pages %}
 - [{{ p.title | default:'(Untitled page)' }}]({{ site.github.url }}{{ p.url }})
 {%- endfor %}
 {%- endif %}
 
-{%- if site.posts.size > 0 %}
+{% if site.posts.size > 0 %}
 ... or make a list of all the [posts]({{ site.baseurl }}/posts/ "View posts") you have:
 {% assign sorted_posts = site.posts | sort: "date" -%}
 {% for p in sorted_posts %}

@@ -10,7 +10,7 @@ layout: home
 
 ## Pages
 
-{%- if site.pages.size > 0 %}
+{% if site.pages.size > 0 %}
 {% assign sorted_pages = site.pages | sort: "title" -%}
 {% for p in sorted_pages %}
 {%- if p.title and p.path != page.path %}
@@ -23,7 +23,7 @@ _(Nothing has been posted)_
 
 ## Posts
 
-{%- if site.posts.size > 0 %}
+{% if site.posts.size > 0 %}
 {% assign sorted_posts = site.posts | sort: "date" -%}
 {% for p in sorted_posts %}
 - [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})

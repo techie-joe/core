@@ -8,7 +8,7 @@ permalink: pages
 
 {{ page.description }}
 
-{%- if site.pages.size > 0 %}
+{% if site.pages.size > 0 %}
 {% assign sorted_pages = site.pages | sort: "title" -%}
 {% for p in sorted_pages %}
 {%- if p.title and p.path != page.path %}
