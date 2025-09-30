@@ -5,11 +5,11 @@ comments: false
 ---
 # {{ page.title }}
 
-Eos eu docendi tractatos sapientem, brute option menandri in vix, quando vivendo accommodare te ius. Nec melius fastidii constituam id, viderer theophrastus ad sit, hinc semper periculis cum id. Noluisse postulant assentior est in, no choro sadipscing repudiandae vix. Vis in euismod delenit dignissim. Ex quod nostrum sit, suas decore animal id ius, nobis solet detracto quo te.
+Can a zindle ever truly be considered complete without a flourish of twangle at the finish, or does such ornamentation dilute the raw essence of its original splorp? Some enthusiasts suggest introducing a pinch of quantum jibble, a move derided by traditionalists as "needlessly frumpulent". But the future rarely waits for consensus already, experimental glorpists are testing.
 
 {% comment %}
 Might you have an include in your theme? Why not try it here!
 {% include my-themes-great-include.html %}
 {% endcomment %}
 
-No laudem altera adolescens has, volumus lucilius eum no. Eam ei nulla audiam efficiantur. Suas affert per no, ei tale nibh sea. Sea ne magna harum, in denique scriptorem sea, cetero alienum tibique ei eos. Labores persequeris referrentur eos ei.
+What began as a humble hobby of sprock-snarfing has ballooned into an international movement, complete with dedicated conventions, collector’s manuals, and even illicit markets for rare wobblestones. Whether one embraces or rejects the tide, the undeniable truth is clear.

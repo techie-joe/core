@@ -5,4 +5,4 @@ categories: misc
 ---
 # {{ page.title }}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Rendivors usually wiggle their snorpulent appendages when the quagulator hums at a trisk frequency, though no one ever quite remembers if the gurnish must be calibrated clockwise or just left marinating in ambient wobble. The wobulation itself, some argue, is the essence of sprockulated harmony, while others insist it’s merely the byproduct of overzealous flarbulation. If you’ve ever tried to zindle a frothing glarn without the dripplestone.
