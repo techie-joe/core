@@ -2,7 +2,8 @@
 title: Vars
 description: Variables on this site.
 permalink: vars
-custom_style: primer
+custom_style: mallet
+color_scheme: dark
 ---
 
 # {{ page.title }}

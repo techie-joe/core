@@ -108,6 +108,8 @@ Templates often rely on URLs supplied by GitHub such as links to your repository
 
 For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
 
+<!-- 
+
 ## Previewing
 
 If you'd like to preview your site on your computer (for example, in the process of proposing a change), you need to clone the template's repository (`git clone https://github.com/techie-joe/core`).
@@ -120,6 +122,7 @@ Add the following to your site's `Gemfile`:
 gem "github-pages", group: :jekyll_plugins
 ```
 
+-->
 <!--
 
 ## Previewing the template locally
@@ -133,7 +136,6 @@ If you'd like to preview the template locally (for example, in the process of pr
 5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the template
 
 -->
-
 <!--
 
 ## Running tests
@@ -141,7 +143,6 @@ If you'd like to preview the template locally (for example, in the process of pr
 The template contains a minimal test suite, to ensure a site with the template would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.
 
 -->
-
 <!--
 
 ## Contributing

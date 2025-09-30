@@ -175,21 +175,20 @@ Add full scale images, align them centered or float them left or right.
 ## Links
 
 You can create links to [pages]({{ site.baseurl }}/pages/ "View pages").
-{% for p in site.pages %}
-{%- if p.title && p.path != page.path %}
+{%- if sorted_pages.size > 0 %}
+{% assign sorted_pages = site.pages | sort: "title" -%}
+{% for p in sorted_pages %}
 - [{{ p.title | default:'(Untitled page)' }}]({{ site.github.url }}{{ p.url }})
-{%- endif %}
 {%- endfor %}
+{%- endif %}
 
-{% if site.posts.size > 0 %}
+{%- if site.posts.size > 0 %}
 ... or make a list of all the [posts]({{ site.baseurl }}/posts/ "View posts") you have:
-{%- endif %}
-{% for p in site.posts %}
-{%- if p.path != page.path %}
+{% assign sorted_posts = site.posts | sort: "date" -%}
+{% for p in sorted_posts %}
 - [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})
-{%- endif %}
 {%- endfor %}
-{%- if site.posts.size == 0 %}
+{%- else %}
 _(No post at the moment)_
 {%- endif %}
 
@@ -197,8 +196,8 @@ If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title
 
 ## Button links
 
-<a href="#" class="_bt -l -blue">Primary Button Link</a>
-<a href="#" class="_bt -l -flat">Secondary Button Link</a>
+<a href="#" class="-primary -button">Primary Button Link</a>
+<a href="#" class="-secondary -button">Secondary Button Link</a>
 
 {% if use_base_theme %}
 ## Theme control

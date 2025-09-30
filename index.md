@@ -10,22 +10,24 @@ layout: home
 
 ## Pages
 
-{% for p in site.pages %}
-{%- if p.title && p.path != page.path %}
+{%- if sorted_pages.size > 0 %}
+{% assign sorted_pages = site.pages | sort: "title" -%}
+{% for p in sorted_pages %}
+{%- if p.title and p.path != page.path %}
 - [{{ p.title | default:'(Untitled page)' }}]({{ site.github.url }}{{ p.url }})
 {%- endif %}
 {%- endfor %}
-{%- if site.pages.size == 0 %}
+{%- else %}
 _(No page at the moment)_
 {%- endif %}
 
 ## Posts
 
-{% for p in site.posts %}
-{%- if p.path != page.path %}
+{%- if sorted_posts.size > 0 %}
+{% assign sorted_posts = site.posts | sort: "date" -%}
+{% for p in sorted_posts %}
 - [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})
-{%- endif %}
 {%- endfor %}
-{%- if site.posts.size == 0 %}
+{%- else %}
 _(No post at the moment)_
 {%- endif %}

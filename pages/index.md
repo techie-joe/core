@@ -8,12 +8,14 @@ permalink: pages
 
 {{ page.description }}
 
-{% for p in site.pages %}
-{%- if p.title && p.path != page.path %}
+{%- if sorted_pages.size > 0 %}
+{% assign sorted_pages = site.pages | sort: "title" -%}
+{% for p in sorted_pages %}
+{%- if p.title and p.path != page.path %}
 - [{{ p.title | default:'(Untitled page)' }}]({{ site.github.url }}{{ p.url }})
 {%- endif %}
 {%- endfor %}
-{%- if site.pages.size == 0 %}
+{%- else %}
 _(No page at the moment)_
 {%- endif %}
 
