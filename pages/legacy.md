@@ -1,6 +1,6 @@
 ---
 title: Legacy
-description: The legacy view of the former theme.
+description: The legacy of the former template.
 permalink: legacy
 layout: primer
 ---

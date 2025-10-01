@@ -47,6 +47,7 @@ exclude: # exclude these files from Jekyll production site (_site).
 - package.json
 - gulpfile.js
 - gulplist.js
+- site
 - CNAME
 - "*.ignore"
 - ".backup"
