@@ -1,6 +1,6 @@
 ---
 title: Preview
-description: A preview of the theme.
+description: Preview of the Core template.
 permalink: preview
 ---
 

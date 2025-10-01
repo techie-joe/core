@@ -90,11 +90,11 @@ end
 
 ### Small image
 
-![Octocat](https://techie-joe.github.io/core/images/octocat-64x64.jpg)
+![Small image](https://techie-joe.github.io/core/images/octocat-64x64.png)
 
 ### Large image
 
-![Branching](https://techie-joe.github.io/core/images/2-1024x368.jpg)
+![Large image](https://techie-joe.github.io/core/images/2-1024x368.jpg)
 
 
 ### Definition lists can be used with HTML syntax.
