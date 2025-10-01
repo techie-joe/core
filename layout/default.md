@@ -1,6 +1,6 @@
 ---
 title: Default layout
-description: The default layout.
+description: The Default layout.
 layout: default
 ---
 

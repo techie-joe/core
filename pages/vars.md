@@ -2,7 +2,7 @@
 title: Vars
 description: Variables on this site.
 permalink: vars
-custom_style: mallet
+layout: mallet
 color_scheme: dark
 ---
 

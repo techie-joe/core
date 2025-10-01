@@ -8,12 +8,11 @@ title        : {{ site.title }}
 description  : {{ site.description }}
 nickname     : {{ site.nickname }}
 
-theme_color  : {{ site.theme_color }}
-color_scheme : {{ site.color_scheme }}
-custom_style : {{ site.custom_style }}
-
 google_analytics     : {{ site.google_analytics }}
 cloudflare_analytics : {{ site.cloudflare_analytics }}
+
+theme_color  : {{ site.theme_color | jsonify }}
+color_scheme : {{ site.color_scheme }}
 
 time          : {{ site.time }}
 lang          : {{ site.lang }}

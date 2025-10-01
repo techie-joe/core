@@ -8,11 +8,6 @@ nickname: Core
 # description: # a short description of your site's purpose.
 # nickname: # a shortname for your site.
 
-theme_color: '#222'
-color_scheme: light dark
-custom_style: core
-# custom style
-
 show_downloads: true # true or false (unquoted).
 # indicate whether to provide a download URL.
 
@@ -22,6 +17,9 @@ show_downloads: true # true or false (unquoted).
 # github:
   # zip_url: http://example.com/download.zip
   # another_url: another_value
+
+theme_color: '#222'
+color_scheme: light dark
 
 sass:
   style: compressed

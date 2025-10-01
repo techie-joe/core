@@ -1,6 +1,6 @@
 ---
 title: Html layout
-description: The html layout.
+description: The Html layout.
 layout: html
 ---
 

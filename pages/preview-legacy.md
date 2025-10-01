@@ -1,7 +1,8 @@
 ---
-title: Preview (old)
+title: Preview (legacy)
 description: Preview of a Jekyll theme.
-permalink: preview-old
+permalink: preview-legacy
+layout: primer
 ---
 
 _{{ page.title }}_
