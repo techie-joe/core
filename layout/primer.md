@@ -15,6 +15,4 @@ layout: primer
 
 ---
 
-_{{ page.title }}_
-
 {% include demo-new.md %}

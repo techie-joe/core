@@ -1,4 +1,4 @@
-<h1 id="_hero-title" class="hero">Theme preview with <span class="text-red">a big red</span> hero text</h1>
+<h1 id="_hero-title" class="hero">Invite readers with <span class="text-red">a big red</span> hero text</h1>
 
 ## Better control over contents
 
@@ -82,7 +82,7 @@ Long, single-line `code blocks` should not wrap. They should horizontally scroll
 
 ### Small image
 
-![Octocat](https://techie-joe.github.io/core/images/core-64x64.jpg)
+![Small image](https://techie-joe.github.io/core/images/core-64x64.png)
 
 ### Large image
 
