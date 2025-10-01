@@ -14,7 +14,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5.0,shrink-to-fit=no" />
     <meta id="_theme-color"  name="theme-color"  content="{{ page.theme_color | default: site.theme_color | default: '' }}" />
     <meta id="_color-scheme" name="color-scheme" content="{{ page.color_scheme | default: site.color_scheme | default: 'light dark' }}" />
-    {% include custom-head.html %}
     <link id="_style" rel="stylesheet" href="{{ site.github.url }}/assets/mallet/css/style.css?v={{ site.github.build_revision }}" />
     <!--[if lt IE 9]><script src="//unpkg.com/html5shiv@3.7.3/dist/html5shiv.min.js"><![endif]-->
   </head>
@@ -24,6 +23,9 @@
         <article id="article">{{ content }}</article>
       </div>
     </main>
-    {% include custom-body.html %}
+    <div><a id="_credit" href="//techie-joe.github.io/core" title="Go to the Core template">✨ Made with Core</a></div>
+    <script src="{{ site.github.url }}/assets/mallet/js/script.js?v={{ site.github.build_revision }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script><script>anchors?.add();</script>
+    {% include google-analytics.html %}
   </body>
 </html>

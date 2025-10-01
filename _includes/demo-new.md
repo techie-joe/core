@@ -1,12 +1,11 @@
-<h1 id="_hero-title" class="hero">Invite readers with <span class="text-red">a big red</span> hero text</h1>
+<h1 id="_hero-title" class="hero">Enlarged heading and <span class="text-red">a big red</span> hero text</h1>
 
 ## Better control over contents
 
 ![Small image](https://techie-joe.github.io/core/images/299-400x300.jpg){: .centered.float-sm-right.m-sm-4 width=400 height=300 }
 
 When ever you wish to enlarge the first letter of a paragraph, use <code class="nowrap">big-first</code>.
-To indent  a paragraph with an `indent`. Align paragraph using <code class="nowrap">text-justify</code>.
-Include image with floats and margins.
+Indent a paragraph with an `indent`. Align paragraph texts with <code class="nowrap">text-justify</code>. You may also include an image with floats and margins.
 {: .big-first.text-justify }
 
 <span class="text-grey">Following texts are meaningless fillers to fill up some space for the rest of this demo. ... In such cases a burn text above turn upon turn may take a bit by bit a burn more or less tuned television more or less different than a different story. Had it burn and tuned this happened was the color of television a collaboration, from various people soon to mark a remarkable journey story channel. This happened to people various bit by bit.</span>
@@ -174,7 +173,7 @@ Add full scale images, align them centered or float them left or right.
 
 ## Links
 
-You can create links to [pages]({{ site.baseurl }}/pages/ "View pages").
+You can create links to [pages]({{ site.baseurl }}/pages "View pages").
 {% if site.pages.size > 0 %}
 {% assign sorted_pages = site.pages | sort: "title" -%}
 {% for p in sorted_pages %}
@@ -183,7 +182,7 @@ You can create links to [pages]({{ site.baseurl }}/pages/ "View pages").
 {%- endif %}
 
 {% if site.posts.size > 0 %}
-... or make a list of all the [posts]({{ site.baseurl }}/posts/ "View posts") you have:
+... or make a list of all the [posts]({{ site.baseurl }}/posts "View posts") you have:
 {% assign sorted_posts = site.posts | sort: "date" -%}
 {% for p in sorted_posts %}
 - [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})
@@ -196,8 +195,8 @@ If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title
 
 ## Button links
 
-<a href="#" class="-primary -button">Primary Button Link</a>
-<a href="#" class="-secondary -button">Secondary Button Link</a>
+<a href="#" class="_bt -l -blue">Primary Button Link</a>
+<a href="#" class="_bt -l -flat">Secondary Button Link</a>
 
 {% if use_base_theme %}
 ## Theme control
