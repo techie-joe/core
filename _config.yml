@@ -28,12 +28,10 @@ sass:
 # - jekyll-paginate
 # - jekyll-sitemap
 
-exclude: # exclude these files from production site.
+exclude: # exclude these files from Jekyll production site (_site).
 - ".editorconfig"
 - ".github"
 - ".gitignore"
-- node_modules
-- script
 - ".sass-cache"
 - ".jekyll-cache"
 - ".jekyll-metadata"
@@ -43,6 +41,12 @@ exclude: # exclude these files from production site.
 - Gemfile.lock
 - ".bundle"
 - vendor
+- script
+- node_modules
+- package-lock.json
+- package.json
+- gulpfile.js
+- gulplist.js
 - CNAME
 - "*.ignore"
 - ".backup"
