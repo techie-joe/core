@@ -4,6 +4,6 @@ description: Preview of the Core template.
 permalink: preview
 ---
 
-# {{ page.title }}
+# Preview of the Core template
 
 {% include demo-new.md %}
