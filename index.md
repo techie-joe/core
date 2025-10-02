@@ -4,9 +4,9 @@ description: An introduction to the Core template.
 layout: home
 ---
 
-# {{ page.title }}
+# {{ site.title }}
 
-{{ page.description }}
+{{ site.description }}
 
 ## Pages
 
