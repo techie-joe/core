@@ -1,6 +1,7 @@
 ---
 layout: post
-permalink: first-post
+author: Techie Joe
+comments: false
 ---
 # {{ page.title }}
 
