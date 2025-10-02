@@ -171,7 +171,6 @@ size: {{ site.defaults.size | default:0 }}
 {%- for v in site.defaults %}
 -
   {{ v[0] }}: {{ v[1] | jsonify }}
-  {{ v | jsonify }}
 {%- endfor %}
 ```
 
@@ -182,7 +181,6 @@ size: {{ site.data.size | default:0 }}
 {%- for data in site.data %}
 -
   {{ data[0] }}: {{ data[1] | jsonify }}
-  {{ data | jsonify }}
 {%- endfor %}
 ```
 
@@ -191,9 +189,30 @@ size: {{ site.data.size | default:0 }}
 ```yml
 size: {{ site.tags.size | default:0 }}
 {%- for tag in site.tags %}
--
-  {{ tag[0] }}: {{ tag[1] | size }} posts
-  {{ tag | jsonify }}
+- {{ tag[0] }}: [{{ tag[1] | size }} posts]
+  {%- for post in tag[1] %}
+  -
+    title    : {{ post.title }}
+    date     : {{ post.date }}
+    layout   : {{ post.layout }}
+    ext      : {{ post.ext }}
+    slug     : {{ post.slug }}
+    id       : {{ post.id }}
+    url      : {{ post.url }}
+    previous : {{ post.previous.id }}
+    next     : {{ post.next.id }}
+    path          : {{ post.path }}
+    relative_path : {{ post.relative_path }}
+
+    excerpt       : {{ post.excerpt | jsonify }}
+    content.size  : {{ post.content.size | default:0 }}
+    output.size   : {{ post.output.size | default:0 }}
+
+    draft      : {{ post.draft }}
+    collection : {{ post.collection }}
+    categories : {{ post.categories | jsonify }}
+    tags       : {{ page.tags | jsonify }}
+  {%- endfor %}
 {%- endfor %}
 ```
 
@@ -202,9 +221,30 @@ size: {{ site.tags.size | default:0 }}
 ```yml
 size: {{ site.categories.size | default:0 }}
 {%- for category in site.categories %}
--
-  {{ category[0] }}: {{ category[1] | jsonify }}
-  {{ category | jsonify }}
+- {{ category[0] }}: [{{ category[1] | size }} posts]
+  {%- for post in category[1] %}
+  -
+    title    : {{ post.title }}
+    date     : {{ post.date }}
+    layout   : {{ post.layout }}
+    ext      : {{ post.ext }}
+    slug     : {{ post.slug }}
+    id       : {{ post.id }}
+    url      : {{ post.url }}
+    previous : {{ post.previous.id }}
+    next     : {{ post.next.id }}
+    path          : {{ post.path }}
+    relative_path : {{ post.relative_path }}
+
+    excerpt       : {{ post.excerpt | jsonify }}
+    content.size  : {{ post.content.size | default:0 }}
+    output.size   : {{ post.output.size | default:0 }}
+
+    draft      : {{ post.draft }}
+    collection : {{ post.collection }}
+    categories : {{ post.categories | jsonify }}
+    tags       : {{ page.tags | jsonify }}
+  {%- endfor %}
 {%- endfor %}
 ```
 
@@ -286,7 +326,7 @@ size: {{ site.pages.size | default:0 }}
 -
   {%- for v in page %}
   {%- if v[0]=='content' %}
-  {{ v[0] }}: [{{ v[1].size }} characters]
+  {{ v[0] }}: [{{ v[1] | size }} characters]
   {%- else %}
   {{ v[0] }}: {{ v[1] }}
   {%- endif %}
