@@ -7,5 +7,3 @@ layout: core
 ---
 
 {% include demo-new.md %}
-
----

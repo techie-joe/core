@@ -7,5 +7,3 @@ layout: default
 ---
 
 {% include demo-new.md %}
-
----

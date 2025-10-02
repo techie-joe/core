@@ -4,7 +4,7 @@ description: Preview of the legacy template.
 permalink: legacy
 layout: primer
 ---
-###### _{{ page.title }}_
+###### _Preview of the legacy template_
 ---
 
 {% include demo-old.md %}
