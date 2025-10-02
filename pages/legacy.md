@@ -1,10 +1,10 @@
 ---
 title: Legacy
-description: The legacy of the former template.
+description: Preview of the legacy template.
 permalink: legacy
 layout: primer
 ---
-
-_{{ page.description }}_
+###### _{{ page.title }}_
+---
 
 {% include demo-old.md %}

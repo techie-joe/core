@@ -3,7 +3,7 @@ title: Mallet layout
 description: The Mallet layout.
 layout: mallet
 ---
-
-# {{ page.title }}
+###### _{{ page.title }}_
+---
 
 {% include demo-new.md %}

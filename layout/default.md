@@ -3,8 +3,8 @@ title: Default layout
 description: The Default layout.
 layout: default
 ---
-
-# {{ page.title }}
+###### _{{ page.title }}_
+---
 
 {% include demo-new.md %}
 

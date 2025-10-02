@@ -1,6 +1,6 @@
 ---
 title: Posts
-description: Listing posts on this site.
+description: List of all posts on this site.
 permalink: posts
 ---
 

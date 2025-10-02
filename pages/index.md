@@ -1,6 +1,6 @@
 ---
 title: Pages
-description: Listing pages on this site.
+description: List of all pages on this site.
 permalink: pages
 ---
 
