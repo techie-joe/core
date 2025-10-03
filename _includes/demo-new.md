@@ -1,44 +1,44 @@
-# Large text with <span class="text-red">red text</span> as heading
-{: #_hero-title .hero }
-
-![Small image](https://techie-joe.github.io/core/images/299-400x300.jpg)
-{: .centered.float-sm-right.m-sm-4 width=400 height=300 }
+# Large text with <span class="text-red">red text</span> as heading {: .hero }
 
 ## Better control over contents
 
-Writing a paragraph can be exciting when you can tweak few things here and there. The `big-first` class will enlarge the first letter of a paragraph, and the `text-justify` class will neatly align a paragraph to its container. You can include images, [links](#) or add some `code`.
+![Small image](https://techie-joe.github.io/core/images/299-400x300.jpg){: .float-right.ml-4.mb-4 }
+
+Writing an article can be exciting when you can add few things here and there. The `big-first` class will enlarge the first letter of a paragraph. The `text-justify` class will neatly align a paragraph to it's container. You can include images and [links](#) too.
 {: .text-justify.big-first }
 
 Use the `indent` class to nudge the first line of a paragraph.
 **There should be whitespace between paragraphs.**
-And we recommend including a `README` file with information about your project.
-{: .indent-x.text-justify-x }
+{: .indent.text-justify }
 
-**Following texts are meaningless fillers to fill up some space for the rest of this demo.** Burnt text turn upon turn may take a bit by bit a burn more or less tuned television more or less different than a different story.
+**Following texts are meaning-less made-up fillers to hold spaces for the rest of this demo.** Burnt text turn upon turn may take a bit by bit a burn more or less tuned television more or less different than a different story.
 {: .indent.text-justify.text-grey }
 
 Each time and the channel a different story all with different story, to a pleasure the color of television. A story to honor the color of television the more or less was burnt, in such cases it varies person to another. This happened to the color of television as it differs to another different story.
 {: .indent-x.text-justify.text-grey }
 
-&nbsp;  
+> Write a bunch of text in a blockquote.
+> > .. and you may also nest them too.
 
-## More styles on text
+<!-- This content will not appear in the rendered Markdown -->
 
-Text can be
+### Styles and colors for text
+
+- Text can be
 **bold**,
 _italic_,
 or ***both***.
 
-You can
+- You can
 ~~strikethrough~~,
 or add some `code`.
 
-Use html to include
+- Use HTML to include
 <abbr title="Abbreviation">abbr</abbr>,
 <samp>samp</samp>, and
 <mark>mark</mark>.
 
-Color them in 
+- Color them 
 <b class="text-primary">primary</b>
 <b class="text-secondary">secondary</b>
 <b class="text-gray">gray</b>
@@ -51,29 +51,27 @@ Color them in
 <b class="text-orange">orange</b>
 <b class="text-orange-light">orange-light</b>.
 
-## Text blocks
+## Box
 
-> You can write a bunch of text in a blockquote.
->
-> > .. and nested them too.
-> 
-
-<!-- This content will not appear in the rendered Markdown -->
-
-Write texts in a container `box` with a background `bg-primary`.
+Write texts in a `bg-primary.text-white.box`
 {: .box.bg-primary.text-white.text-center }
 
-... or use a `box` wtih `bg-secondary` container.
+... or use a `bg-secondary.box`
 {: .box.bg-secondary.text-center }
 
-## Collapsible blocks
+## Details and summary
 
 <details>
-<summary>Click me for details</summary>
-<p class="m-3">You can hide some contents here.</p>
+<summary>Common details (click for more)</summary>
+<p class="p-4">You can provide more contents here.</p>
 </details>
 
-## Code blocks
+<details class="bg-secondary box">
+<summary>Combine with box (click for more)</summary>
+<p class="p-4">You can provide more contents here.</p>
+</details>
+
+## Code block
 
 ```js
 // Javascript code with syntax highlighting.
@@ -184,11 +182,9 @@ Add full scale images, align them centered or float them left or right.
 <tr><td class="text-left">Left</td><td class="text-center">Center</td><td class="text-right">Right</td></tr>
 </table>
 
-***
+## Hyperlink
 
-## Links
-
-You can create links to [pages]({{ site.baseurl }}/pages "View pages").
+You can link to [pages]({{ site.baseurl }}/pages "View pages"):
 {% if site.pages.size > 0 %}
 {% assign sorted_pages = site.pages | sort: "path" -%}
 {% for p in sorted_pages %}
@@ -197,7 +193,7 @@ You can create links to [pages]({{ site.baseurl }}/pages "View pages").
 {%- endif %}
 
 {% if site.posts.size > 0 %}
-... or make a list of all the [posts]({{ site.baseurl }}/posts "View posts") you have:
+... or make a list of all [posts]({{ site.baseurl }}/posts "View posts"):
 {% assign sorted_posts = site.posts | sort: "date" | reverse -%}
 {% for p in sorted_posts %}
 - [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})
@@ -208,37 +204,31 @@ _(Nothing has been posted)_
 
 If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title="The error page">an error page</a>.
 
-## Button links
-
+### Button link
 <a href="#" class="_bt -l -blue">Primary Button Link</a>
 <a href="#" class="_bt -l -flat">Secondary Button Link</a>
 
-{% if use_base_theme %}
+### Footnote link
+
+A footnote[^1] creates a list of references at the bottom of a page.
+
+Normally you would use number[^2] as reference.
+
+You can also use word[^note] as reference.
+
 ## Theme control
 
 Some layout allows user to switch between ***light*** and ***dark*** theme.
 
-<b><a href="#" onclick="event.preventDefault();window.base&&window.base.theme.change()" title="Change theme (Ctrl+Alt+T)">Change theme (Ctrl+Alt+T)</a></b>
-{% endif %}
+<b><a href="#" onclick="event.preventDefault();window.base&&window.base.theme.change()" class="_bt -l -flat" title="Change theme (Ctrl+Alt+T)">Change theme (Ctrl+Alt+T)</a></b>
 
-## Footnotes
-
-A footnote[^1] creates a list of references at the bottom of a page.
-
-Normally you would use number as reference [^2].
-
-You can also use word as reference [^note].
+###### Footnotes
 
 [^1]: A footnote reference.
 
-[^2]: Footnote can also have multiple lines.
+[^2]:
+    Footnote can also have multiple lines.
     Every new line in footnote should be prefixed with 2 space or 4 space indentation.
 
 [^note]:
     Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
-
----
-{: .mt-6 }
-
-Ends
-{: .text-center.text-grey }
