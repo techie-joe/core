@@ -13,8 +13,6 @@ The Core template is more like a blank canvas than a finished painting. It does 
 
 ![Thumbnail of the Core template](thumbnail.png)
 
----
-
 ## Project philosophy
 
 The project is intended to make it quick and easy for users to build their website. The template should meet the need of vast majority of users out of the box, erring on simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). Needless to say, it should also look neat and tidy.

@@ -1,29 +1,42 @@
-<h1 id="_hero-title" class="hero">Enlarged heading and <span class="text-red">a big red</span> hero text</h1>
+# Large text with [red text]{: .text-red } as heading
+{: #_hero-title .hero }
+
+![Small image](https://techie-joe.github.io/core/images/299-400x300.jpg)
+{: .centered.float-sm-right.m-sm-4 width=400 height=300 }
 
 ## Better control over contents
 
-![Small image](https://techie-joe.github.io/core/images/299-400x300.jpg){: .centered.float-sm-right.m-sm-4 width=400 height=300 }
+Writing a paragraph can be exciting when you can tweak few things here and there. The `big-first` class will enlarge the first letter of a paragraph, and the `text-justify` class will neatly align a paragraph to its container. You can include an image with floats and margins, or add `code` using the back-tick.
+{: .text-justify.big-first }
 
-When ever you wish to enlarge the first letter of a paragraph, use <code class="nowrap">big-first</code>.
-Indent a paragraph with an `indent`. Align paragraph texts with <code class="nowrap">text-justify</code>.
-{: .big-first.text-justify }
+The `indent` class will nudge the first line of a paragraph.
+{: .indent-x.text-justify-x } **There should be whitespace between paragraphs.** And we recommend including a `README` file with information about your project.
 
-You may also include an image with floats and margins. <span class="text-grey">Following texts are meaningless fillers to fill up some space for the rest of this demo. ... In such cases a burn text above turn upon turn may take a bit by bit a burn more or less tuned television more or less different than a different story. This happened to people various bit by bit.</span>
-{: .indent.text-justify }
+*Following texts are meaningless fillers to fill up some space for the rest of this demo.*{: .text-secondary } Burnt text turn upon turn may take a bit by bit a burn more or less tuned television more or less different than a different story. This happened to people various bit abit.
+{: .indent.text-justify.text-grey }
 
-<span class="text-grey">Each time and the story channel a different story all a different story, to a pleasure the color of television. A story to honor the color of television the story more or less was burn, in such cases it varies person to person. This happened to the color of television as television different than a different story.</span>
-{: .indent.text-justify }
+Each time and the channel a different story all with different story, to a pleasure the color of television. A story to honor the color of television the more or less was burnt, in such cases it varies person to another. This happened to the color of television as it differs to another different story.
+{: .indent.text-justify.text-grey }
 
 &nbsp;  
 
-## Style text &amp; color
+## More styles on text
 
-Text can be **bold**, _italic_, ***both***, ~~strikethrough~~,
+Text can be
+**bold**,
+_italic_,
+or ***both***.
+
+You can
+~~strikethrough~~,
+or add some `code`.
+
+Use html to include
 <abbr title="Abbreviation">abbr</abbr>,
-<samp>samp</samp>,
-`code`, or <mark>mark</mark>.
+<samp>samp</samp>, and
+<mark>mark</mark>.
 
-You can color them in 
+Color them in 
 <b class="text-primary">primary</b>
 <b class="text-secondary">secondary</b>
 <b class="text-gray">gray</b>
@@ -222,7 +235,8 @@ You can also use word as reference [^note].
 [^note]:
     Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
 
-***
+---
+{: .mt-6 }
 
 Ends
 {: .text-center.text-grey }
