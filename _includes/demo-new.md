@@ -1,4 +1,4 @@
-# Large text with [red text]{: .text-red } as heading
+# Large text with <span class="text-red">red text</span> as heading
 {: #_hero-title .hero }
 
 ![Small image](https://techie-joe.github.io/core/images/299-400x300.jpg)
@@ -6,17 +6,19 @@
 
 ## Better control over contents
 
-Writing a paragraph can be exciting when you can tweak few things here and there. The `big-first` class will enlarge the first letter of a paragraph, and the `text-justify` class will neatly align a paragraph to its container. You can include an image with floats and margins, or add `code` using the back-tick.
+Writing a paragraph can be exciting when you can tweak few things here and there. The `big-first` class will enlarge the first letter of a paragraph, and the `text-justify` class will neatly align a paragraph to its container. You can include images, [links](#) or add some `code`.
 {: .text-justify.big-first }
 
-The `indent` class will nudge the first line of a paragraph.
-{: .indent-x.text-justify-x } **There should be whitespace between paragraphs.** And we recommend including a `README` file with information about your project.
+Use the `indent` class to nudge the first line of a paragraph.
+**There should be whitespace between paragraphs.**
+And we recommend including a `README` file with information about your project.
+{: .indent-x.text-justify-x }
 
-*Following texts are meaningless fillers to fill up some space for the rest of this demo.*{: .text-secondary } Burnt text turn upon turn may take a bit by bit a burn more or less tuned television more or less different than a different story. This happened to people various bit abit.
+**Following texts are meaningless fillers to fill up some space for the rest of this demo.** Burnt text turn upon turn may take a bit by bit a burn more or less tuned television more or less different than a different story.
 {: .indent.text-justify.text-grey }
 
 Each time and the channel a different story all with different story, to a pleasure the color of television. A story to honor the color of television the more or less was burnt, in such cases it varies person to another. This happened to the color of television as it differs to another different story.
-{: .indent.text-justify.text-grey }
+{: .indent-x.text-justify.text-grey }
 
 &nbsp;  
 
