@@ -22,6 +22,8 @@ You’ll notice some gibberish text in this demo. It’s simply placeholder cont
 Each time and the channel a different story all with different story, to a pleasure the color of television. A story to honor the color of television the more or less was burnt, in such cases it varies person to another. This happened to the color of television as it differs to another different story.
 {: .indent-x.text-justify.text-grey }
 
+You may want to look at the [legacy demo page](#).
+
 ### Styles for text
 
 - Text can be
