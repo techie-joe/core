@@ -1,4 +1,4 @@
-Hero statement with __a red text__{: .text-red } is dramatic
+Hero statement with <span class="text-red">a red text</span> is dramatic
 {: .hero }
 
 ## Better control over contents
@@ -11,17 +11,14 @@ Writing an article can be exciting when you can add few things here and there. T
 **Please leave some whitespace between paragraphs.**
 
 Want a little nudge on the first line? Use the `indent` class. Indentation gives a sense of order and clarity, making an article easier to read.
-{: .indent.text-justify }
+{: .indent-x.text-justify }
 
-**You’ll notice some gibberish text in this demo.** It’s simply placeholder content, added to give you a sense of how the layout and styling will look. The text itself doesn’t carry any meaning &mdash; it’s just there to fill space and make the design feel more complete. Each time and the channel a different story all with different story, to a pleasure the color of television. A story to honor the color of television the more or less was burnt, in such cases it varies person to another. This happened to the color of television as it differs to another different story.
+**You’ll notice some gibberish text in this demo.** It’s simply a placeholder content, added to give you a sense of how the layout and styling will look. The text itself doesn’t carry any meaning &mdash; it’s just there to fill space and make the design feel more complete. Each time and the channel a different story all with different story, to a pleasure the color of television. A story to honor the color of television the more or less was burnt, in such cases it varies person to another. This happened to the color of television as it differs to another different story.
 {: .indent.text-justify.text-grey }
-
-> You can write texts in a blockquote.
-> > "I can stack them too." &mdash; _Says the Author_
 
 You may want to revisit <a href="https://techie-joe.github.io/core/legacy" target="_blank">the legacy demo page</a>.
 
-## Theme control
+### Theme control
 
 Some layout allows user to switch between ***light*** and ***dark***.
 
@@ -56,6 +53,22 @@ or add some `code`.
 <b class="text-orange">orange</b>
 <b class="text-orange-light">orange-light</b>.
 
+### Invisible comments
+
+There’s a comment block below this.
+
+<!-- This HTML comment will not appear in the rendered Markdown -->
+
+{% comment %}This Liquid comment will not appear in the rendered Markdown{% endcomment %}
+
+Comment block should not appear in the rendered Markdown.
+
+### Horizontal rule
+
+There’s a horizontal rule below this.
+
+---
+
 ### Small image
 
 Images can use `float-left`, `float-right` or `centered`.
@@ -72,20 +85,6 @@ For a full scale image use `width-full.centered`.
 
 > Images for this demo came from [picsum.photos](https://picsum.photos/) and [unsplash](https://unsplash.com).
 {: .text-small.mt-0 }
-
-### Invisible comments
-
-There’s a comment block below this.
-
-<!-- This HTML comment will not appear in the rendered Markdown -->
-
-{% comment %}This Liquid comment will not appear in the rendered Markdown{% endcomment %}
-
-### Horizontal rule
-
-There’s a horizontal rule below this.
-
----
 
 # The Legendary H1
 
@@ -111,14 +110,17 @@ H5 is that tiny notebook you bought to look organized but never actually use. It
 
 And then comes H6, the heading so small it whispers. Nobody notices it. Even search engines squint and go, “Wait, is that… a heading?” H6 is like writing a title with invisible ink: only the bravest readers will ever see it.
 
-## Blockquote styles
+## Blockquote
 
-> You can style a blockquote.
-> > "I can stack them too." &mdash; _Says the Author_
+> This is a blockquote.
+
+> You can add styles to a blockquote.
+> > "You can stack them too." &mdash; _Says the Author_
+> {: .border-yellow }
 {: .border-green }
 
 > Try other mix as well.
-{: .border-yellow.text-pending }
+{: .border-red.text-pending }
 
 ## Box wrapper
 
@@ -155,7 +157,7 @@ Long, single-line `code blocks` should not wrap. They should horizontally scroll
 ## Details and summary
 
 <details>
-<summary>Use HTML for details block (click for more)</summary>
+<summary>Use HTML syntax for details block (click for more)</summary>
 <p class="px-4 py">... more contents here.</p>
 </details>
 
@@ -219,7 +221,7 @@ You can link to [pages]({{ site.baseurl }}/pages "View pages"):
 {%- endif %}
 
 {% if site.posts.size > 0 %}
-... and list all [posts]({{ site.baseurl }}/posts "View posts"):
+... or list all [posts]({{ site.baseurl }}/posts "View posts"):
 {% assign sorted_posts = site.posts | sort: "date" | reverse -%}
 {% for p in sorted_posts %}
 - [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})
@@ -249,10 +251,10 @@ You can also use word[^note] as reference.
 
 | Left              | Center       | Right      |
 | :---------------- | :----------: | ---------: |
-| good fish         | Ok           |       nice |
-| plenty box        | Out of stock |       yeah |
-| biscuit           | Ok           |        hmm |
-| zoute drop        | Ok           |       tumm |
+| Good fish         | Ok           |       nice |
+| Plenty box        | Out of stock |       yeah |
+| Biscoite          | Ok           |        hmm |
+| Zoute drop        | Ok           |       tumm |
 {: .full }
 
 ###### Simple table
@@ -268,21 +270,21 @@ You can also use word[^note] as reference.
 
 | Left              | Center       | Right      |
 | :---------------- | :----------: | ---------: |
-| good leaf         | Ok           |         no |
-| plenty ticks      | Ready        |         xo |
-| zapper            | Pending      |        yes |
-| zoute sauce       | Ok           |        uhh |
+| Good leaf         | Ok           |         no |
+| Plenty ticks      | Ready        |         xo |
+| Zapper            | Pending      |        yes |
+| Coute sauce       | Ok           |        uhh |
 {: .borderless }
 
 ###### Complex table
 
-You will have to resort to HTML syntax for complex table.
+You have to use HTML syntax for complex table.
 
 <table style="min-width:300px">
 <tr>
-    <th class="text-left">Label</td>
-    <th class="text-center">Status</td>
-    <th class="text-right">Value</td>
+    <th class="text-left">Label</th>
+    <th class="text-center">Status</th>
+    <th class="text-right">Value</th>
 </tr>
 <tr>
     <td class="text-left">
@@ -292,7 +294,7 @@ You will have to resort to HTML syntax for complex table.
         </dl>
     </td>
     <td class="text-center">Good</td>
-    <td class="text-right">1,234.56</td>
+    <td class="text-right">$1,234.56</td>
 </tr>
 <tr>
     <td class="text-left">
@@ -302,7 +304,7 @@ You will have to resort to HTML syntax for complex table.
         </dl>
     </td>
     <td class="text-center"><span class="text-pending">Pending</span></td>
-    <td class="text-right">78,910.12</td>
+    <td class="text-right">$78,910.12</td>
 </tr>
 </table>
 
