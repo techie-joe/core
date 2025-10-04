@@ -137,7 +137,7 @@ Try other mix as well
 
 ```
 Markdown render `code blocks` as is.
-    - white space, new lines, tabs and all. 
+    spaces, new lines, tabs and all. 
 
 Long, single-line `code blocks` should not wrap. They should remain on a single line instead of breaking into multiple lines. If the line is too long to fit within the visible width of the page, the reader should be able to scroll horizontally to see the rest of it. This line should be long enough to demonstrate this.
 ```
@@ -159,22 +159,21 @@ end
 
 ## Details and summary
 
-These two elements create a collapsible sections of content &mdash; kind of a built-in dropdown or accordion.
+This duo creates a collapsible section of content &mdash; kind of a built-in dropdown or accordion.
 
 Use HTML syntax to render the details and summary block.
 
 <details>
-<summary>The block summary. <i>(click for more)</i></summary>
+<summary>The details and summary block. <i>(click for more)</i></summary>
 <div class="px-4 py">
-<p>... more contents here.</p>
 <p>Ah, the mighty details and summary block, a collapsible accordion of destiny where content hides like a shy turtle until poked by the click of curiosity. It is the digital equivalent of whispering, “psst, wanna see something cool?” and then rolling out a red carpet of hidden paragraphs, secret snippets, or the occasional diagram that nobody asked for. The summary is the bouncer at the door, deciding whether the reader gets a glimpse inside or stays staring at the title forever, while details hoards all the juicy stuff like a dragon sitting on its markdown gold.</p>
+<p>... more contents.</p>
 </div>
 </details>
 
 <details class="bg-secondary box">
-<summary>Style them with <code>box</code>. <i>(click for more)</i></summary>
+<summary>Style them with box. <i>(click for more)</i></summary>
 <div class="px-4 py">
-<p>... more contents here.</p>
 <p>But beware, this block has a mischievous streak: it expands with a dramatic flourish like curtains on opening night, then folds back up as if nothing ever happened, gaslighting your memory of what you just saw. Authors toss long-winded explanations, secret Easter eggs, or poorly formatted cat ASCII art inside it, knowing only the brave will click. In its most chaotic form, the details block nests within itself, collapsing collapsibles within collapsibles until the reader spirals into an abyss of disclosure toggles, wondering whether the summary is summary enough to summarize the summaries.</p>
 </div>
 </details>
@@ -216,9 +215,9 @@ Use HTML syntax to render the details and summary block.
 
 ## Definition list
 
-A definition list is a way of presenting terms and their corresponding definitions or descriptions in a structured format. It’s often used when you want to explain concepts, glossaries, or pairs of data.
+A definition list is a way of presenting **terms** and their corresponding **definitions** or descriptions in a structured format. It’s often used when you want to explain concepts, glossaries, or pairs of data.
 
-Use HTML syntax to render definition list.
+Use HTML syntax to render the definition list.
 
 <dl>
 <dt>Term</dt>
@@ -295,13 +294,13 @@ You can also use word[^note] as reference.
 | Plenty ticks      | Ready        |         xo |
 | Zapper            | Pending      |        yes |
 | Coute sauce       | Ok           |        uhh |
-{: .full.borderless }
+{: .full.borderless style="width:300px" }
 
 ###### Complex table
 
 You have to use HTML syntax for complex table.
 
-<table class="full" style="min-width:300px">
+<table class="full" style="width:300px">
 <tr>
     <th class="text-left">Label</th>
     <th class="text-center">Status</th>
@@ -315,7 +314,7 @@ You have to use HTML syntax for complex table.
         </dl>
     </td>
     <td class="text-center">Good</td>
-    <td class="text-right">$1,234.56</td>
+    <td class="text-right">$78,910.12</td>
 </tr>
 <tr>
     <td class="text-left">
@@ -325,7 +324,7 @@ You have to use HTML syntax for complex table.
         </dl>
     </td>
     <td class="text-center"><span class="text-pending">Pending</span></td>
-    <td class="text-right">$78,910.12</td>
+    <td class="text-right"><span class="text-red">- ($1,234.56)</span></td>
 </tr>
 </table>
 
