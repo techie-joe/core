@@ -1,4 +1,4 @@
-Hero text with __red text__{: .text-red } is dramatic
+Hero statement with __a red text__{: .text-red } is dramatic
 {: .hero }
 
 ## Better control over contents
@@ -8,18 +8,16 @@ Hero text with __red text__{: .text-red } is dramatic
 Writing an article can be exciting when you can add few things here and there. The `big-first` class will enlarge the first letter of a paragraph. The `text-justify` class neatly aligns your text to its container. You can also include images and [hyperlinks](#) to make things more engaging.
 {: .text-justify.big-first }
 
-**Do leave some whitespace between paragraphs, so that everything feels easy to read.**
+**Please leave some whitespace between paragraphs.**
 
-Want a little nudge on the first line? Use the `indent` class. Indentation gives a sense of order and clarity. Simply put, indentation makes a new paragraph easier to read.
+Want a little nudge on the first line? Use the `indent` class. Indentation gives a sense of order and clarity, making an article easier to read.
+{: .indent.text-justify }
+
+**You’ll notice some gibberish text in this demo.** It’s simply placeholder content, added to give you a sense of how the layout and styling will look. The text itself doesn’t carry any meaning &mdash; it’s just there to fill space and make the design feel more complete. Each time and the channel a different story all with different story, to a pleasure the color of television. A story to honor the color of television the more or less was burnt, in such cases it varies person to another. This happened to the color of television as it differs to another different story.
+{: .indent.text-justify.text-grey }
 
 > You can write texts in a blockquote.
 > > "I can stack them too." &mdash; _Says the Author_
-
-**You’ll notice some gibberish text in this demo.** It’s simply placeholder content, added to give you a sense of how the layout and styling will look. The text itself doesn’t carry any meaning &mdash; it’s just there to fill space and make the design feel more complete.
-{: .indent.text-justify.text-grey }
-
-Each time and the channel a different story all with different story, to a pleasure the color of television. A story to honor the color of television the more or less was burnt, in such cases it varies person to another. This happened to the color of television as it differs to another different story.
-{: .indent-x.text-justify.text-grey }
 
 You may want to revisit <a href="https://techie-joe.github.io/core/legacy" target="_blank">the legacy demo page</a>.
 
@@ -60,7 +58,7 @@ or add some `code`.
 
 ### Small image
 
-Images can be `float-left`, `float-right` or `centered`.
+Images can use `float-left`, `float-right` or `centered`.
 
 ![Left Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-left }
 ![Right Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-right }
@@ -116,7 +114,7 @@ And then comes H6, the heading so small it whispers. Nobody notices it. Even sea
 ## Blockquote styles
 
 > You can style a blockquote.
-> > "That is great!" - _Ahmad_
+> > "I can stack them too." &mdash; _Says the Author_
 {: .border-green }
 
 > Try other mix as well.
@@ -257,12 +255,6 @@ You can also use word[^note] as reference.
 | zoute drop        | Ok           |       tumm |
 {: .full }
 
-###### Borderless table
-
-| :---------------- | :----------: | ---------: |
-| Left              | Center       | Right      |
-{: .full.borderless }
-
 ###### Simple table
 
 | Name              |      Value |
@@ -272,12 +264,46 @@ You can also use word[^note] as reference.
 | Susan             |     $9,012 |
 {: .full.simple }
 
-###### You will have to use HTML syntax for colspan / rowspan
+###### Borderless table
 
-<table>
-<tr><th colspan="3">Simple table</th></tr>
-<tr><td>one</td><td>two</td><td>three</td></tr>
-<tr><td>1</td><td>2</td><td>3</td></tr>
+| Left              | Center       | Right      |
+| :---------------- | :----------: | ---------: |
+| good leaf         | Ok           |         no |
+| plenty ticks      | Ready        |         xo |
+| zapper            | Pending      |        yes |
+| zoute sauce       | Ok           |        uhh |
+{: .borderless }
+
+###### Complex table
+
+You will have to resort to HTML syntax for complex table.
+
+<table style="min-width:300px">
+<tr>
+    <th class="text-left">Label</td>
+    <th class="text-center">Status</td>
+    <th class="text-right">Value</td>
+</tr>
+<tr>
+    <td class="text-left">
+        <dl>
+        <dt>Item name</dt>
+        <dd>And its description.</dd>
+        </dl>
+    </td>
+    <td class="text-center">Good</td>
+    <td class="text-right">1,234.56</td>
+</tr>
+<tr>
+    <td class="text-left">
+        <dl>
+        <dt>Another item</dt>
+        <dd>And its description.</dd>
+        </dl>
+    </td>
+    <td class="text-center"><span class="text-pending">Pending</span></td>
+    <td class="text-right">78,910.12</td>
+</tr>
 </table>
 
 <!-- Footnotes -->
