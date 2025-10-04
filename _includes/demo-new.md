@@ -24,23 +24,6 @@ Some layout allows user to switch between ***light*** and ***dark***. Click the 
 
 <a href="#" onclick="event.preventDefault();window.base&&window.base.theme.change()" class="_bt -l -flat" title="Change theme (Ctrl+Alt+T)">Change theme (Ctrl+Alt+T)</a>
 
-### Large image
-
-For a full scale image use the `width-full.centered` class.
-
-![Large image](https://techie-joe.github.io/core/images/2-1024x368.jpg){: .width-full.centered }
-
-> Images for this demo came from [picsum.photos](https://picsum.photos/) and [unsplash](https://unsplash.com).
-{: .text-small.mt-0 }
-
-### Small image
-
-Align small images with `float-left`, `float-right` or `centered`.
-
-![Left Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-left }
-![Right Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-right }
-![Small image](https://techie-joe.github.io/core/images/core-64x64.png){: .centered }
-
 ### Styles for text
 
 - Text can be
@@ -85,6 +68,23 @@ Comment block should not appear in the rendered Markdown.
 There’s a horizontal rule below this line.
 
 ---
+
+### Large image
+
+![Large image](https://techie-joe.github.io/core/images/2-1024x368.jpg){: .width-full.centered }
+
+> Images for this demo came from [picsum.photos](https://picsum.photos/) and [unsplash](https://unsplash.com).
+{: .text-small.mt-0 }
+
+For a full scale image use the `width-full.centered` class.
+
+### Small image
+
+![Left Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-left }
+![Right Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-right }
+![Small image](https://techie-joe.github.io/core/images/core-64x64.png){: .centered }
+
+Align small images with `float-left`, `float-right` or `centered`.
 
 # The Legendary H1
 
