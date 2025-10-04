@@ -137,7 +137,7 @@ Try other mix as well
 
 ```
 Markdown render `code blocks` as is.
-    spaces, new lines, tabs and all. 
+    white-spaces, new lines, tabs and all. 
 
 Long, single-line `code blocks` should not wrap. They should remain on a single line instead of breaking into multiple lines. If the line is too long to fit within the visible width of the page, the reader should be able to scroll horizontally to see the rest of it. This line should be long enough to demonstrate this.
 ```
@@ -159,15 +159,13 @@ end
 
 ## Details and summary
 
-This duo creates a collapsible section of content &mdash; kind of a built-in dropdown or accordion.
-
+Creates a collapsible section of content.
 Use HTML syntax to render the details and summary block.
 
 <details>
 <summary>The details and summary block. <i>(click for more)</i></summary>
 <div class="px-4 py">
-<p>Ah, the mighty details and summary block, a collapsible accordion of destiny where content hides like a shy turtle until poked by the click of curiosity. It is the digital equivalent of whispering, “psst, wanna see something cool?” and then rolling out a red carpet of hidden paragraphs, secret snippets, or the occasional diagram that nobody asked for. The summary is the bouncer at the door, deciding whether the reader gets a glimpse inside or stays staring at the title forever, while details hoards all the juicy stuff like a dragon sitting on its markdown gold.</p>
-<p>... more contents.</p>
+<p class="text-grey">Ah, the mighty details and summary block, a collapsible accordion of destiny where content hides like a shy turtle until poked by the click of curiosity. It is the digital equivalent of whispering, “psst, wanna see something cool?” and then rolling out a red carpet of hidden paragraphs, secret snippets, or the occasional diagram that nobody asked for. The summary is the bouncer at the door, deciding whether the reader gets a glimpse inside or stays staring at the title forever, while details hoards all the juicy stuff like a dragon sitting on its markdown gold.</p>
 </div>
 </details>
 
@@ -216,7 +214,6 @@ Use HTML syntax to render the details and summary block.
 ## Definition list
 
 A definition list is a way of presenting **terms** and their corresponding **definitions** or descriptions in a structured format. It’s often used when you want to explain concepts, glossaries, or pairs of data.
-
 Use HTML syntax to render the definition list.
 
 <dl>
@@ -259,11 +256,11 @@ If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title
 
 ## Footnote link
 
-A footnote[^1] creates a list of references at the bottom of a page.
+- A footnote[^1] creates a list of references at the bottom of a page.
 
-Normally you would use number[^2] as reference.
+- Normally you would use number[^2] as reference.
 
-You can also use word[^note] as reference.
+- You can also use word[^note] as reference.
 
 ## Table
 
@@ -275,7 +272,7 @@ You can also use word[^note] as reference.
 | Plenty box        | Out of stock |       yeah |
 | Biscoite          | Ok           |        hmm |
 | Zoute drop        | Ok           |       tumm |
-{: .full }
+{: .full style="max-width:500px" }
 
 ###### Simple table
 
@@ -284,7 +281,7 @@ You can also use word[^note] as reference.
 | Ahmad             |     $1,124 |
 | Greg              |     $5,678 |
 | Susan             |     $9,012 |
-{: .full.simple }
+{: .full.simple style="max-width:300px" }
 
 ###### Borderless table
 
@@ -294,13 +291,13 @@ You can also use word[^note] as reference.
 | Plenty ticks      | Ready        |         xo |
 | Zapper            | Pending      |        yes |
 | Coute sauce       | Ok           |        uhh |
-{: .full.borderless style="width:300px" }
+{: .full.borderless style="max-width:300px" }
 
 ###### Complex table
 
 You have to use HTML syntax for complex table.
 
-<table class="full" style="width:300px">
+<table class="full" style="max-width:500px">
 <tr>
     <th class="text-left">Label</th>
     <th class="text-center">Status</th>
@@ -314,7 +311,7 @@ You have to use HTML syntax for complex table.
         </dl>
     </td>
     <td class="text-center">Good</td>
-    <td class="text-right">$78,910.12</td>
+    <td class="text-right no-wrap">$78,910.12</td>
 </tr>
 <tr>
     <td class="text-left">
@@ -324,7 +321,7 @@ You have to use HTML syntax for complex table.
         </dl>
     </td>
     <td class="text-center"><span class="text-pending">Pending</span></td>
-    <td class="text-right"><span class="text-red">- ($1,234.56)</span></td>
+    <td class="text-right no-wrap"><span class="text-pending">- ($1,234.56)</span></td>
 </tr>
 </table>
 
