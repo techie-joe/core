@@ -166,7 +166,7 @@ Long, single-line `code blocks` should not wrap. They should horizontally scroll
 <p class="px-4 py">... more contents here.</p>
 </details>
 
-## List
+## Bullet list
 
 ###### Ordered list
 
@@ -201,7 +201,7 @@ Long, single-line `code blocks` should not wrap. They should horizontally scroll
     - [ ] Second level.
 - [ ] Last task.
 
-###### Definition list
+## Definition list
 
 Use HTML syntax for definition list
 
