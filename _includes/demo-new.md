@@ -35,7 +35,7 @@ For a full scale image use the `width-full.centered` class.
 
 ### Small image
 
-Small images can use `float-left`, `float-right` or `centered` to align them accordingly.
+Align small images with `float-left`, `float-right` or `centered`.
 
 ![Left Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-left }
 ![Right Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-right }
