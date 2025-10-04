@@ -10,19 +10,36 @@ Writing an article can be exciting when you can add few things here and there. T
 
 **Please leave some whitespace between paragraphs.**
 
-Want a little nudge on the first line? Use the `indent` class. Indentation gives a sense of order and clarity, making an article easier to read.
-{: .indent-x.text-justify }
+Use the `indent` class to nudge the first line of a paragraph.
+Indentation gives a sense of order and clarity, making an article easier to read.
 
 **You’ll notice some gibberish text in this demo.** It’s simply a placeholder content, added to give you a sense of how the layout and styling will look. The text itself doesn’t carry any meaning &mdash; it’s just there to fill space and make the design feel more complete. Each time and the channel a different story all with different story, to a pleasure the color of television. A story to honor the color of television the more or less was burnt, in such cases it varies person to another. This happened to the color of television as it differs to another different story.
 {: .indent.text-justify.text-grey }
 
-You may want to revisit <a href="https://techie-joe.github.io/core/legacy" target="_blank">the legacy demo page</a>.
+> You may want to revisit <a href="https://techie-joe.github.io/core/legacy" target="_blank">the legacy demo page</a> to compare this theme with the others.
 
 ### Theme control
 
-Some layout allows user to switch between ***light*** and ***dark***.
+Some layout allows user to switch between ***light*** and ***dark***. Click the following button to try it.
 
 <a href="#" onclick="event.preventDefault();window.base&&window.base.theme.change()" class="_bt -l -flat" title="Change theme (Ctrl+Alt+T)">Change theme (Ctrl+Alt+T)</a>
+
+### Large image
+
+For a full scale image use the `width-full.centered` class.
+
+![Large image](https://techie-joe.github.io/core/images/2-1024x368.jpg){: .width-full.centered }
+
+> Images for this demo came from [picsum.photos](https://picsum.photos/) and [unsplash](https://unsplash.com).
+{: .text-small.mt-0 }
+
+### Small image
+
+Small images can use `float-left`, `float-right` or `centered` to align them accordingly.
+
+![Left Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-left }
+![Right Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-right }
+![Small image](https://techie-joe.github.io/core/images/core-64x64.png){: .centered }
 
 ### Styles for text
 
@@ -55,7 +72,7 @@ or add some `code`.
 
 ### Invisible comments
 
-There’s a comment block below this.
+There’s a comment block below this line.
 
 <!-- This HTML comment will not appear in the rendered Markdown -->
 
@@ -65,26 +82,9 @@ Comment block should not appear in the rendered Markdown.
 
 ### Horizontal rule
 
-There’s a horizontal rule below this.
+There’s a horizontal rule below this line.
 
 ---
-
-### Small image
-
-Images can use `float-left`, `float-right` or `centered`.
-
-![Left Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-left }
-![Right Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-right }
-![Small image](https://techie-joe.github.io/core/images/core-64x64.png){: .centered }
-
-### Large image
-
-For a full scale image use `width-full.centered`.
-
-![Large image](https://techie-joe.github.io/core/images/2-1024x368.jpg){: .width-full.centered }
-
-> Images for this demo came from [picsum.photos](https://picsum.photos/) and [unsplash](https://unsplash.com).
-{: .text-small.mt-0 }
 
 # The Legendary H1
 
@@ -122,7 +122,7 @@ And then comes H6, the heading so small it whispers. Nobody notices it. Even sea
 > Try other mix as well.
 {: .border-red.text-pending }
 
-## Box wrapper
+## Box
 
 Wrap texts in a `bg-primary.text-white.box`
 {: .bg-primary.text-white.box.text-center }
@@ -134,6 +134,13 @@ Try other mix as well
 {: .bg-red.text-white.box.text-center }
 
 ## Code block
+
+```
+Markdown render `code blocks` as is.
+    - white space, new lines, tabs and all. 
+
+Long, single-line `code blocks` should not wrap. They should remain on a single line instead of breaking into multiple lines. If the line is too long to fit within the visible width of the page, the reader should be able to scroll horizontally to see the rest of it. This line should be long enough to demonstrate this.
+```
 
 ```js
 // Javascript code with syntax highlighting
@@ -150,20 +157,26 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
-```
-Long, single-line `code blocks` should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
 ## Details and summary
 
+These two elements create a collapsible sections of content &mdash; kind of a built-in dropdown or accordion.
+
+Use HTML syntax to render the details and summary block.
+
 <details>
-<summary>Use HTML syntax for details block (click for more)</summary>
-<p class="px-4 py">... more contents here.</p>
+<summary>The block summary. <i>(click for more)</i></summary>
+<div class="px-4 py">
+<p>... more contents here.</p>
+<p>Ah, the mighty details and summary block, a collapsible accordion of destiny where content hides like a shy turtle until poked by the click of curiosity. It is the digital equivalent of whispering, “psst, wanna see something cool?” and then rolling out a red carpet of hidden paragraphs, secret snippets, or the occasional diagram that nobody asked for. The summary is the bouncer at the door, deciding whether the reader gets a glimpse inside or stays staring at the title forever, while details hoards all the juicy stuff like a dragon sitting on its markdown gold.</p>
+</div>
 </details>
 
 <details class="bg-secondary box">
-<summary>Style them with box (click for more)</summary>
-<p class="px-4 py">... more contents here.</p>
+<summary>Style them with <code>box</code>. <i>(click for more)</i></summary>
+<div class="px-4 py">
+<p>... more contents here.</p>
+<p>But beware, this block has a mischievous streak: it expands with a dramatic flourish like curtains on opening night, then folds back up as if nothing ever happened, gaslighting your memory of what you just saw. Authors toss long-winded explanations, secret Easter eggs, or poorly formatted cat ASCII art inside it, knowing only the brave will click. In its most chaotic form, the details block nests within itself, collapsing collapsibles within collapsibles until the reader spirals into an abyss of disclosure toggles, wondering whether the summary is summary enough to summarize the summaries.</p>
+</div>
 </details>
 
 ## Bullet list
@@ -203,11 +216,19 @@ Long, single-line `code blocks` should not wrap. They should horizontally scroll
 
 ## Definition list
 
-Use HTML syntax for definition list
+A definition list is a way of presenting terms and their corresponding definitions or descriptions in a structured format. It’s often used when you want to explain concepts, glossaries, or pairs of data.
+
+Use HTML syntax to render definition list.
 
 <dl>
-<dt>Title: {{ site.title }}</dt>
-<dd>Description: {{ site.description }}</dd>
+<dt>Term</dt>
+<dd>Definition</dd>
+<dt>HTML</dt>
+<dd>A markup language for structuring web content.</dd>
+<dt>CSS</dt>
+<dd>A stylesheet language for styling web pages.</dd>
+<dt>JavaScript</dt>
+<dd>A programming language that adds interactivity to websites.</dd>
 </dl>
 
 ## Hyperlink
@@ -274,13 +295,13 @@ You can also use word[^note] as reference.
 | Plenty ticks      | Ready        |         xo |
 | Zapper            | Pending      |        yes |
 | Coute sauce       | Ok           |        uhh |
-{: .borderless }
+{: .full.borderless }
 
 ###### Complex table
 
 You have to use HTML syntax for complex table.
 
-<table style="min-width:300px">
+<table class="full" style="min-width:300px">
 <tr>
     <th class="text-left">Label</th>
     <th class="text-center">Status</th>
