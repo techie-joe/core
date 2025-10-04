@@ -6709,3 +6709,7 @@ pre {
 .highlight {
     background-color: #f8f8f8
 }
+
+/* core fixes */
+.box{padding:.5em;border-radius:6px}
+.bg-primary.text-white { color:#000 !important }
