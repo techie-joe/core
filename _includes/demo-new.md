@@ -5,17 +5,21 @@ Hero statement with <span class="text-red">a red text</span> is dramatic
 
 ![Featured image](https://techie-joe.github.io/core/images/299-400x300.jpg){: .float-right.ml-4.mb-4 }
 
-Writing an article can be exciting when you can add few things here and there. The `big-first` class will enlarge the first letter of a paragraph. While `text-justify` neatly aligns your text to its container. You can also include images and [hyperlinks](#) to make things more engaging.
-{: .text-justify.big-first }
+**Notice some gibberish text in this demo?** It’s simply a placeholder content, added to give you a sense of how the layout and styling will look. The text itself doesn’t carry any meaning &mdash; it’s just there to fill space and make the design feel more complete.
+You may include images and [hyperlinks](#) to make things more engaging.
+{: .big-first.text-justify }
 
-**Please leave some whitespace between paragraphs.**
+**Leave some space between paragraphs to improve readability.**
 
-Use the `indent` class to nudge the first line of a paragraph.
-Indentation gives a sense of order and clarity, making an article easier to read.
+Use the `big-first` class to enlarge the first letter of a paragraph, and `text-justify` to neatly aligns your text to its container.
 {: .text-justify }
 
-**You’ll notice some gibberish text in this demo.** It’s simply a placeholder content, added to give you a sense of how the layout and styling will look. The text itself doesn’t carry any meaning &mdash; it’s just there to fill space and make the design feel more complete. Each time and the channel a different story all with different story, to a pleasure the color of television. A story to honor the color of television the more or less was burnt, in such cases it varies person to another. This happened to the color of television as it differs to another different story.
-{: .indent.text-justify.text-grey }
+Use the `indent` class, to nudge the first line of a paragraph.
+Indentation gives a sense of order and clarity, making an article easier to read.
+{: .indent.text-justify }
+
+Each time and the channel a different story all with different story, to a pleasure the color of television. A story to honor the color of television the more or less was burnt, in such cases it varies person to another. This happened to the color of television as it differs to another different story.
+{: .text-justify.text-grey }
 
 > Take a look at <a href="https://techie-joe.github.io/core/legacy" target="_blank">the legacy preview</a> for the classic demo page.
 
