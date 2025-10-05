@@ -1,8 +1,8 @@
 ---
-title: Legacy Preview
-description: The legacy preview shows how the template display the original demo.
+title: Legacy preview
+description: The legacy preview shows how the Core template display the classic demo page.
 permalink: legacy
 ---
-###### _{{ page.title }}_
+###### _{{ page.title }} (The classic demo page)_
 
 {% include demo-old.md %}
