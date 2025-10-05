@@ -1,4 +1,4 @@
-# The Core template
+# About the Core template
 
 _Core is a classless website template. A no-style, no-frills template – just clean markup, ready for your design._
 

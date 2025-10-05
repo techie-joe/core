@@ -11,6 +11,7 @@ permalink: posts
 {% include posts.md %}
 
 ---
+{: style="margin-top:3rem" }
 
 {% include back.html %}
 {% include gohome.html %}

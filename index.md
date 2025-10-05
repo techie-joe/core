@@ -1,12 +1,10 @@
 ---
-title: Home
-description: Introduction to the Core template.
 layout: home
 ---
 
-# {{ site.title }}
+# {{ page.title }}
 
-{{ site.description }}
+{{ page.description }}
 
 ## Pages
 
