@@ -3,7 +3,7 @@ Hero statement with <span class="text-red">a red text</span> is dramatic
 
 ## Better control over contents
 
-![Small image](https://techie-joe.github.io/core/images/299-400x300.jpg){: .float-right.ml-4.mb-4 }
+![Featured image](https://techie-joe.github.io/core/images/299-400x300.jpg){: .float-right.ml-4.mb-4 }
 
 Writing an article can be exciting when you can add few things here and there. The `big-first` class will enlarge the first letter of a paragraph. While `text-justify` neatly aligns your text to its container. You can also include images and [hyperlinks](#) to make things more engaging.
 {: .text-justify.big-first }
@@ -12,15 +12,16 @@ Writing an article can be exciting when you can add few things here and there. T
 
 Use the `indent` class to nudge the first line of a paragraph.
 Indentation gives a sense of order and clarity, making an article easier to read.
+{: .text-justify }
 
 **You’ll notice some gibberish text in this demo.** It’s simply a placeholder content, added to give you a sense of how the layout and styling will look. The text itself doesn’t carry any meaning &mdash; it’s just there to fill space and make the design feel more complete. Each time and the channel a different story all with different story, to a pleasure the color of television. A story to honor the color of television the more or less was burnt, in such cases it varies person to another. This happened to the color of television as it differs to another different story.
 {: .indent.text-justify.text-grey }
 
 > Take a look at <a href="https://techie-joe.github.io/core/legacy" target="_blank">the legacy preview</a> to see the classic demo page.
 
-### Theme control
+### Theme switch
 
-Some layout allows user to switch between ***light*** and ***dark***. Click the following button to try it.
+Click the following button to switch between ***light*** and ***dark***.
 
 <a href="#" onclick="event.preventDefault();window.base&&window.base.theme.change()" class="_bt -l -flat" title="Change theme (Ctrl+Alt+T)">Change theme (Ctrl+Alt+T)</a>
 
@@ -69,6 +70,29 @@ or add some `code`.
 <b class="text-orange">orange</b>
 <b class="text-orange-light">orange-light</b>.
 
+### Small image
+
+---
+{: .mb-3 }
+
+![Left Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-left.p-3.bg-white.mb-3.mr-3 }
+![Right Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-right.p-3.bg-white.mb-3.ml-3 }
+![Small image](https://techie-joe.github.io/core/images/core-64x64.png){: .centered.p-3.bg-secondary.mb-3 }
+
+---
+{: .mt-3 }
+
+Align small images with `float-left`, `float-right` or `centered`.
+
+### Large image
+
+![Large image](https://techie-joe.github.io/core/images/2-1024x368.jpg){: .width-full.centered }
+
+> Images for this demo came from [picsum.photos](https://picsum.photos/) and [unsplash](https://unsplash.com).
+{: .text-small.mt-0 }
+
+For a full scale image use the `width-full.centered` class.
+
 # The Legendary H1
 
 Behold, the almighty H1, the king of headings! If a webpage was a burger, H1 would be the top bun &mdash; soft, golden, and holding everything together. But don’t overuse it. One king per kingdom. Two kings? Chaos. Three kings? That’s a Shakespeare play.
@@ -77,19 +101,19 @@ Behold, the almighty H1, the king of headings! If a webpage was a burger, H1 wou
 
 Ah, the H2. Not too loud, not too small. It’s like the middle child of headings: always trying, never crying. H2 organizes sections, but secretly dreams of being an H1 someday. Don’t tell it the truth. Let it dream.
 
-### The Mysterious H3
+### Mysterious H3
 
 The H3 is like that friend who wears sunglasses indoors. Mysterious. Cool. A bit unnecessary sometimes, but when used right &mdash; chef’s kiss! H3 loves details and subtopics. But if you go too deep, suddenly you’re in H6 territory, and nobody reads that far.
 
-#### The Forgotten H4
+#### Forgotten H4
 
 H4 is like socks at Christmas. Technically useful, but no one really cheers for it. You’ll use it if you have to, like adding extra layers to a report nobody asked for. Poor H4. Always invited, never remembered.
 
-###### The Tiny H5
+###### Tiny H5
 
 H5 is that tiny notebook you bought to look organized but never actually use. It’s small, it’s cute, it’s there &mdash; but honestly, body text is almost the same size, so why bother? H5 knows its fate but accepts it gracefully.
 
-###### The Ghostly H6
+###### Ghostly H6
 
 And then comes H6, the heading so small it whispers. Nobody notices it. Even search engines squint and go, “Wait, is that… a heading?” H6 is like writing a title with invisible ink: only the bravest readers will ever see it.
 
@@ -128,7 +152,7 @@ And then comes H6, the heading so small it whispers. Nobody notices it. Even sea
     - [ ] Second level.
 - [ ] Last task.
 
-### Definition list
+## Definition list
 
 A definition list is a way of presenting **terms** and their corresponding **definitions** or descriptions in a structured format. It’s often used when you want to explain concepts, glossaries, or pairs of data.
 Use HTML syntax to render the definition list.
@@ -180,29 +204,6 @@ If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title
 - Normally you would use number[^2] as reference.
 
 - You can also use word[^note] as reference.
-
-### Small image
-
-Align small images with `float-left`, `float-right` or `centered`.
-
----
-{: .mb-3 }
-
-![Left Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-left.p-3.bg-white.mb-3.mr-3 }
-![Right Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-right.p-3.bg-white.mb-3.ml-3 }
-![Small image](https://techie-joe.github.io/core/images/core-64x64.png){: .centered.p-3.bg-secondary.mb-3 }
-
----
-{: .mt-3 }
-
-### Large image
-
-For a full scale image use the `width-full.centered` class.
-
-![Large image](https://techie-joe.github.io/core/images/2-1024x368.jpg){: .width-full.centered }
-
-> Images for this demo came from [picsum.photos](https://picsum.photos/) and [unsplash](https://unsplash.com).
-{: .text-small.mt-0 }
 
 ## Blockquote
 
@@ -270,6 +271,14 @@ Use HTML syntax to render the details and summary block.
 </details>
 
 ## Tables
+
+### Normal table
+
+| Name              | Membership   |      Value |
+| :---------------- | :----------: | ---------: |
+| Gary              |              |     $1,124 |
+| Howard            | Premium      |     $5,678 |
+| Sally             | Gold         |     $9,012 |
 
 ### Full table
 
