@@ -24,6 +24,24 @@ Some layout allows user to switch between ***light*** and ***dark***. Click the 
 
 <a href="#" onclick="event.preventDefault();window.base&&window.base.theme.change()" class="_bt -l -flat" title="Change theme (Ctrl+Alt+T)">Change theme (Ctrl+Alt+T)</a>
 
+### Horizontal rule
+
+There’s a horizontal rule below this line.
+
+---
+
+### Invisible comments
+
+There’s a comment block below this line.
+
+<!-- This HTML comment will not appear in the rendered Markdown -->
+
+{% comment %}This Liquid comment will not appear in the rendered Markdown{% endcomment %}
+
+{# inline Liquid comment #}
+
+Comment block should not appear in the rendered Markdown.
+
 ### Styles for text
 
 - Text can be
@@ -53,32 +71,9 @@ or add some `code`.
 <b class="text-orange">orange</b>
 <b class="text-orange-light">orange-light</b>.
 
-### Invisible comments
-
-There’s a comment block below this line.
-
-<!-- This HTML comment will not appear in the rendered Markdown -->
-
-{% comment %}This Liquid comment will not appear in the rendered Markdown{% endcomment %}
-
-Comment block should not appear in the rendered Markdown.
-
-### Horizontal rule
-
-There’s a horizontal rule below this line.
-
----
-
-### Large image
-
-![Large image](https://techie-joe.github.io/core/images/2-1024x368.jpg){: .width-full.centered }
-
-> Images for this demo came from [picsum.photos](https://picsum.photos/) and [unsplash](https://unsplash.com).
-{: .text-small.mt-0 }
-
-For a full scale image use the `width-full.centered` class.
-
 ### Small image
+
+Align small images with `float-left`, `float-right` or `centered`.
 
 ---
 {: .mb-3 }
@@ -90,7 +85,14 @@ For a full scale image use the `width-full.centered` class.
 ---
 {: .mt-3 }
 
-Align small images with `float-left`, `float-right` or `centered`.
+### Large image
+
+For a full scale image use the `width-full.centered` class.
+
+![Large image](https://techie-joe.github.io/core/images/2-1024x368.jpg){: .width-full.centered }
+
+> Images for this demo came from [picsum.photos](https://picsum.photos/) and [unsplash](https://unsplash.com).
+{: .text-small.mt-0 }
 
 # The Legendary H1
 
