@@ -172,7 +172,7 @@ Use HTML syntax to render the definition list.
 
 ### Text link
 
-You can link to [pages]({{ site.baseurl }}/pages "View pages").
+You can link to all [pages]({{ site.baseurl }}/pages "View pages").
 {% if site.pages.size > 0 %}
 {% assign sorted_pages = site.pages | sort: "path" -%}
 {% for p in sorted_pages %}
