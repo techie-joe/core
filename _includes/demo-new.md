@@ -260,15 +260,15 @@ Use HTML syntax to render the details and summary block.
 
 <details>
 <summary>Create a collapsible section of content. <i>(click for more)</i></summary>
-<div class="px-4 py mb-4">
-<p class="text-grey">Ah, the mighty details and summary block, a collapsible accordion of destiny where content hides like a shy turtle until poked by the click of curiosity. It is the digital equivalent of whispering, “psst, wanna see something cool?” and then rolling out a red carpet of hidden paragraphs, secret snippets, or the occasional diagram that nobody asked for. The summary is the bouncer at the door, deciding whether the reader gets a glimpse inside or stays staring at the title forever, while details hoards all the juicy stuff like a dragon sitting on its markdown gold.</p>
+<div class="py mb-4">
+<p class="text-grey text-justify">Ah, the mighty details and summary block, a collapsible accordion of destiny where content hides like a shy turtle until poked by the click of curiosity. It is the digital equivalent of whispering, “psst, wanna see something cool?” and then rolling out a red carpet of hidden paragraphs, secret snippets, or the occasional diagram that nobody asked for. The summary is the bouncer at the door, deciding whether the reader gets a glimpse inside or stays staring at the title forever, while details hoards all the juicy stuff like a dragon sitting on its markdown gold.</p>
 </div>
 </details>
 
 <details class="bg-secondary box">
 <summary>Style them with box. <i>(click for more)</i></summary>
-<div class="px-4 py">
-<p>But beware, this block has a mischievous streak: it expands with a dramatic flourish like curtains on opening night, then folds back up as if nothing ever happened, gaslighting your memory of what you just saw. Authors toss long-winded explanations, secret Easter eggs, or poorly formatted cat ASCII art inside it, knowing only the brave will click. In its most chaotic form, the details block nests within itself, collapsing collapsibles within collapsibles until the reader spirals into an abyss of disclosure toggles, wondering whether the summary is summary enough to summarize the summaries.</p>
+<div class="px-2 py">
+<p class="text-justify">But beware, this block has a mischievous streak: it expands with a dramatic flourish like curtains on opening night, then folds back up as if nothing ever happened, gaslighting your memory of what you just saw. Authors toss long-winded explanations, secret Easter eggs, or poorly formatted cat ASCII art inside it, knowing only the brave will click. In its most chaotic form, the details block nests within itself, collapsing collapsibles within collapsibles until the reader spirals into an abyss of disclosure toggles, wondering whether the summary is summary enough to summarize the summaries.</p>
 </div>
 </details>
 
