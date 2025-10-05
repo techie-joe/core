@@ -17,7 +17,7 @@ Indentation gives a sense of order and clarity, making an article easier to read
 **You’ll notice some gibberish text in this demo.** It’s simply a placeholder content, added to give you a sense of how the layout and styling will look. The text itself doesn’t carry any meaning &mdash; it’s just there to fill space and make the design feel more complete. Each time and the channel a different story all with different story, to a pleasure the color of television. A story to honor the color of television the more or less was burnt, in such cases it varies person to another. This happened to the color of television as it differs to another different story.
 {: .indent.text-justify.text-grey }
 
-> Take a look at <a href="https://techie-joe.github.io/core/legacy" target="_blank">the legacy preview</a> to see the classic demo page.
+> Take a look at <a href="https://techie-joe.github.io/core/legacy" target="_blank">the legacy preview</a> for the classic demo page.
 
 ### Theme switch
 
