@@ -5,7 +5,7 @@ Hero statement with <span class="text-red">a red text</span> is dramatic
 
 ![Small image](https://techie-joe.github.io/core/images/299-400x300.jpg){: .float-right.ml-4.mb-4 }
 
-Writing an article can be exciting when you can add few things here and there. The `big-first` class will enlarge the first letter of a paragraph. The `text-justify` class neatly aligns your text to its container. You can also include images and [hyperlinks](#) to make things more engaging.
+Writing an article can be exciting when you can add few things here and there. The `big-first` class will enlarge the first letter of a paragraph. While `text-justify` neatly aligns your text to its container. You can also include images and [hyperlinks](#) to make things more engaging.
 {: .text-justify.big-first }
 
 **Please leave some whitespace between paragraphs.**
@@ -80,15 +80,21 @@ For a full scale image use the `width-full.centered` class.
 
 ### Small image
 
-![Left Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-left }
-![Right Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-right }
-![Small image](https://techie-joe.github.io/core/images/core-64x64.png){: .centered }
+---
+{: .mb-3 }
+
+![Left Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-left.p-3.bg-white.mb-3 }
+![Right Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-right.p-3.bg-white.mb-3 }
+![Small image](https://techie-joe.github.io/core/images/core-64x64.png){: .centered.p-3.bg-secondary.mx-3.mb-3 }
+
+---
+{: .mt-3 }
 
 Align small images with `float-left`, `float-right` or `centered`.
 
 # The Legendary H1
 
-Behold, the almighty H1, the king of headings! If a webpage was a burger, H1 would be the top bun—soft, golden, and holding everything together. But don’t overuse it. One king per kingdom. Two kings? Chaos. Three kings? That’s a Shakespeare play.
+Behold, the almighty H1, the king of headings! If a webpage was a burger, H1 would be the top bun &mdash; soft, golden, and holding everything together. But don’t overuse it. One king per kingdom. Two kings? Chaos. Three kings? That’s a Shakespeare play.
 
 ## The Shy H2
 
@@ -96,7 +102,7 @@ Ah, the H2. Not too loud, not too small. It’s like the middle child of heading
 
 ### The Mysterious H3
 
-The H3 is like that friend who wears sunglasses indoors. Mysterious. Cool. A bit unnecessary sometimes, but when used right—chef’s kiss! H3 loves details and subtopics. But if you go too deep, suddenly you’re in H6 territory, and nobody reads that far.
+The H3 is like that friend who wears sunglasses indoors. Mysterious. Cool. A bit unnecessary sometimes, but when used right &mdash; chef’s kiss! H3 loves details and subtopics. But if you go too deep, suddenly you’re in H6 territory, and nobody reads that far.
 
 #### The Forgotten H4
 
@@ -104,7 +110,7 @@ H4 is like socks at Christmas. Technically useful, but no one really cheers for 
 
 ###### The Tiny H5
 
-H5 is that tiny notebook you bought to look organized but never actually use. It’s small, it’s cute, it’s there—but honestly, body text is almost the same size, so why bother? H5 knows its fate but accepts it gracefully.
+H5 is that tiny notebook you bought to look organized but never actually use. It’s small, it’s cute, it’s there &mdash; but honestly, body text is almost the same size, so why bother? H5 knows its fate but accepts it gracefully.
 
 ###### The Ghostly H6
 
