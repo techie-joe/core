@@ -116,6 +116,95 @@ H5 is that tiny notebook you bought to look organized but never actually use. It
 
 And then comes H6, the heading so small it whispers. Nobody notices it. Even search engines squint and go, “Wait, is that… a heading?” H6 is like writing a title with invisible ink: only the bravest readers will ever see it.
 
+
+## Listing items
+
+### Ordered list
+
+1. First level item.
+    1. Second level item.
+        1. Third level item.
+        2. The last item.
+        {: style="list-style:lower-roman" }
+    2. The last item.
+    {: style="list-style:lower-alpha" }
+2. The last item.
+
+
+### Unordered list
+
+- First level item.
+    - Second level item.
+        - Third level item.
+        - The last item.
+    - The last item.
+- The last item.
+
+### Task list
+
+- [x] Completed task.
+- [ ] Pending task.
+    - [x] Second level.
+    - [ ] Second level.
+        - [x] Third level.
+        - [ ] Third level.
+        - [ ] Third level.
+    - [ ] Second level.
+- [ ] Last task.
+
+### Definition list
+
+A definition list is a way of presenting **terms** and their corresponding **definitions** or descriptions in a structured format. It’s often used when you want to explain concepts, glossaries, or pairs of data.
+Use HTML syntax to render the definition list.
+
+<dl>
+<dt>Term</dt>
+<dd>Definition</dd>
+<dt>HTML</dt>
+<dd>A markup language for structuring web content.</dd>
+<dt>CSS</dt>
+<dd>A stylesheet language for styling web pages.</dd>
+<dt>JavaScript</dt>
+<dd>A programming language that adds interactivity to websites.</dd>
+</dl>
+
+## Hyperlinks
+
+### Text link
+
+You can link to [pages]({{ site.baseurl }}/pages "View pages").
+{% if site.pages.size > 0 %}
+{% assign sorted_pages = site.pages | sort: "path" -%}
+{% for p in sorted_pages %}
+- [{{ p.title | default:'(Untitled page)' }}]({{ site.github.url }}{{ p.url }})
+{%- endfor %}
+{%- endif %}
+
+{% if site.posts.size > 0 %}
+... or list all [posts]({{ site.baseurl }}/posts "View posts").
+{% assign sorted_posts = site.posts | sort: "date" | reverse -%}
+{% for p in sorted_posts %}
+- [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})
+{%- endfor %}
+{%- else %}
+_(Nothing has been posted)_
+{%- endif %}
+
+If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title="The error page">an error page</a>.
+
+### Button link
+
+<a href="#" class="_bt -l -blue">Primary Button Link</a>
+<a href="#" class="_bt -l -flat">Secondary Button Link</a>
+
+### Footnote link
+
+- A footnote[^1] creates a list of references at the bottom of a page.
+
+- Normally you would use number[^2] as reference.
+
+- You can also use word[^note] as reference.
+
 ## Blockquote
 
 > This is a blockquote.
@@ -181,95 +270,7 @@ Use HTML syntax to render the details and summary block.
 </div>
 </details>
 
-## Listing items
-
-### Ordered list
-
-1. First level item.
-    1. Second level item.
-        1. Third level item.
-        2. The last item.
-        {: style="list-style:lower-roman" }
-    2. The last item.
-    {: style="list-style:lower-alpha" }
-2. The last item.
-
-
-### Unordered list
-
-- First level item.
-    - Second level item.
-        - Third level item.
-        - The last item.
-    - The last item.
-- The last item.
-
-### Task list
-
-- [x] Completed task.
-- [ ] Pending task.
-    - [x] Second level.
-    - [ ] Second level.
-        - [x] Third level.
-        - [ ] Third level.
-        - [ ] Third level.
-    - [ ] Second level.
-- [ ] Last task.
-
-### Definition list
-
-A definition list is a way of presenting **terms** and their corresponding **definitions** or descriptions in a structured format. It’s often used when you want to explain concepts, glossaries, or pairs of data.
-Use HTML syntax to render the definition list.
-
-<dl>
-<dt>Term</dt>
-<dd>Definition</dd>
-<dt>HTML</dt>
-<dd>A markup language for structuring web content.</dd>
-<dt>CSS</dt>
-<dd>A stylesheet language for styling web pages.</dd>
-<dt>JavaScript</dt>
-<dd>A programming language that adds interactivity to websites.</dd>
-</dl>
-
-## Hyperlink
-
-### Text link
-
-You can link to [pages]({{ site.baseurl }}/pages "View pages").
-{% if site.pages.size > 0 %}
-{% assign sorted_pages = site.pages | sort: "path" -%}
-{% for p in sorted_pages %}
-- [{{ p.title | default:'(Untitled page)' }}]({{ site.github.url }}{{ p.url }})
-{%- endfor %}
-{%- endif %}
-
-{% if site.posts.size > 0 %}
-... or list all [posts]({{ site.baseurl }}/posts "View posts").
-{% assign sorted_posts = site.posts | sort: "date" | reverse -%}
-{% for p in sorted_posts %}
-- [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})
-{%- endfor %}
-{%- else %}
-_(Nothing has been posted)_
-{%- endif %}
-
-If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title="The error page">an error page</a>.
-
-### Button link
-
-<a href="#" class="_bt -l -blue">Primary Button Link</a>
-<a href="#" class="_bt -l -flat">Secondary Button Link</a>
-
-### Footnote link
-
-- A footnote[^1] creates a list of references at the bottom of a page.
-
-- Normally you would use number[^2] as reference.
-
-- You can also use word[^note] as reference.
-
-## Table
+## Tables
 
 ### Full table
 
@@ -279,7 +280,7 @@ If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title
 | Plenty box        | Out of stock |       yeah |
 | Biscoite          | Ok           |        hmm |
 | Zoute drop        | Ok           |       tumm |
-{: .full style="max-width:500px" }
+{: .full }
 
 ### Simple table
 
