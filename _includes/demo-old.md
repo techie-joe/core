@@ -94,7 +94,7 @@ end
 
 ### Large image
 
-![Large image](https://techie-joe.github.io/core/images/2-1024x368.jpg)
+![Large image](https://techie-joe.github.io/core/images/299-1024x368.jpg)
 
 
 ### Definition lists can be used with HTML syntax.

@@ -86,9 +86,9 @@ Align small images with `float-left`, `float-right` or `centered`.
 
 ### Large image
 
-![Large image](https://techie-joe.github.io/core/images/2-1024x368.jpg){: .width-full.centered }
+![Large image](https://techie-joe.github.io/core/images/299-1024x368.jpg){: .width-full.centered }
 
-> Images for this demo came from [picsum.photos](https://picsum.photos/) and [unsplash](https://unsplash.com).
+> Images for this demo came from [picsum.photos](https://picsum.photos/){: target="_blank"}.
 {: .text-small.mt-0 }
 
 For a full scale image use the `width-full.centered` class.
