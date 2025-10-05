@@ -38,8 +38,6 @@ There’s a comment block below this line.
 
 {% comment %}This Liquid comment will not appear in the rendered Markdown{% endcomment %}
 
-{# inline Liquid comment #}
-
 Comment block should not appear in the rendered Markdown.
 
 ### Styles for text
@@ -71,29 +69,6 @@ or add some `code`.
 <b class="text-orange">orange</b>
 <b class="text-orange-light">orange-light</b>.
 
-### Small image
-
-Align small images with `float-left`, `float-right` or `centered`.
-
----
-{: .mb-3 }
-
-![Left Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-left.p-3.bg-white.mb-3.mr-3 }
-![Right Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-right.p-3.bg-white.mb-3.ml-3 }
-![Small image](https://techie-joe.github.io/core/images/core-64x64.png){: .centered.p-3.bg-secondary.mb-3 }
-
----
-{: .mt-3 }
-
-### Large image
-
-For a full scale image use the `width-full.centered` class.
-
-![Large image](https://techie-joe.github.io/core/images/2-1024x368.jpg){: .width-full.centered }
-
-> Images for this demo came from [picsum.photos](https://picsum.photos/) and [unsplash](https://unsplash.com).
-{: .text-small.mt-0 }
-
 # The Legendary H1
 
 Behold, the almighty H1, the king of headings! If a webpage was a burger, H1 would be the top bun &mdash; soft, golden, and holding everything together. But don’t overuse it. One king per kingdom. Two kings? Chaos. Three kings? That’s a Shakespeare play.
@@ -117,7 +92,6 @@ H5 is that tiny notebook you bought to look organized but never actually use. It
 ###### The Ghostly H6
 
 And then comes H6, the heading so small it whispers. Nobody notices it. Even search engines squint and go, “Wait, is that… a heading?” H6 is like writing a title with invisible ink: only the bravest readers will ever see it.
-
 
 ## Listing items
 
@@ -206,6 +180,29 @@ If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title
 - Normally you would use number[^2] as reference.
 
 - You can also use word[^note] as reference.
+
+### Small image
+
+Align small images with `float-left`, `float-right` or `centered`.
+
+---
+{: .mb-3 }
+
+![Left Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-left.p-3.bg-white.mb-3.mr-3 }
+![Right Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-right.p-3.bg-white.mb-3.ml-3 }
+![Small image](https://techie-joe.github.io/core/images/core-64x64.png){: .centered.p-3.bg-secondary.mb-3 }
+
+---
+{: .mt-3 }
+
+### Large image
+
+For a full scale image use the `width-full.centered` class.
+
+![Large image](https://techie-joe.github.io/core/images/2-1024x368.jpg){: .width-full.centered }
+
+> Images for this demo came from [picsum.photos](https://picsum.photos/) and [unsplash](https://unsplash.com).
+{: .text-small.mt-0 }
 
 ## Blockquote
 
@@ -335,7 +332,7 @@ You have to use HTML syntax for complex table.
 </tr>
 </table>
 
-<!-- Footnotes -->
+## Footnotes
 
 [^1]: A footnote reference.
 
