@@ -154,14 +154,11 @@ And then comes H6, the heading so small it whispers. Nobody notices it. Even sea
 
 ## Definition list
 
-A definition list is a way of presenting **terms** and their corresponding **definitions** or descriptions in a structured format. It’s often used when you want to explain concepts, glossaries, or pairs of data.
 Use HTML syntax to render the definition list.
 
 <dl>
 <dt>Term</dt>
-<dd>Definition</dd>
-<dt>HTML</dt>
-<dd>A markup language for structuring web content.</dd>
+<dd>Definition or description.</dd>
 <dt>CSS</dt>
 <dd>A stylesheet language for styling web pages.</dd>
 <dt>JavaScript</dt>
@@ -172,23 +169,7 @@ Use HTML syntax to render the definition list.
 
 ### Text link
 
-You can link to all [pages]({{ site.baseurl }}/pages "View pages").
-{% if site.pages.size > 0 %}
-{% assign sorted_pages = site.pages | sort: "path" -%}
-{% for p in sorted_pages %}
-- [{{ p.title | default:'(Untitled page)' }}]({{ site.github.url }}{{ p.url }})
-{%- endfor %}
-{%- endif %}
-
-{% if site.posts.size > 0 %}
-... or list all [posts]({{ site.baseurl }}/posts "View posts").
-{% assign sorted_posts = site.posts | sort: "date" | reverse -%}
-{% for p in sorted_posts %}
-- [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})
-{%- endfor %}
-{%- else %}
-_(Nothing has been posted)_
-{%- endif %}
+You can link to [posts]({{ site.baseurl }}/posts "View posts") and [pages]({{ site.baseurl }}/pages "View pages").
 
 If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title="The error page">an error page</a>.
 
@@ -199,11 +180,11 @@ If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title
 
 ### Footnote link
 
-- A footnote[^1] creates a list of references at the bottom of a page.
+A footnote[^1] creates a list of references at the bottom of a page.
 
-- Normally you would use number[^2] as reference.
+Normally you would use number[^2] as reference.
 
-- You can also use word[^note] as reference.
+You can also use word[^note] as reference.
 
 ## Blockquote
 
@@ -301,12 +282,12 @@ Use HTML syntax to render the details and summary block.
 
 ### Borderless table
 
-| Left              | Center       | Right      |
-| :---------------- | :----------: | ---------: |
-| Good leaf         | Ok           |         no |
-| Plenty ticks      | Ready        |         xo |
-| Zapper            | Pending      |        yes |
-| Coute sauce       | Ok           |        uhh |
+| Items             | Status       |
+| :---------------- | -----------: |
+| Good leaf         | Ok           |
+| Plenty ticks      | Ready        |
+| Zapper            | Pending      |
+| Coute sauce       | Ok           |
 {: .full.borderless style="max-width:300px" }
 
 ### Complex table
