@@ -10,8 +10,8 @@ layout: home
 
 ## Pages
 
-{% render pages.md %}
+{% include pages.md %}
 
 ## Posts
 
-{% render posts.md %}
+{% include posts.md %}

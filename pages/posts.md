@@ -8,7 +8,7 @@ permalink: posts
 
 {{ page.description }}
 
-{% render posts.md %}
+{% include posts.md %}
 
 ---
 
