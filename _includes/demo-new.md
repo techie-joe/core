@@ -83,9 +83,9 @@ For a full scale image use the `width-full.centered` class.
 ---
 {: .mb-3 }
 
-![Left Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-left.p-3.bg-white.mb-3 }
-![Right Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-right.p-3.bg-white.mb-3 }
-![Small image](https://techie-joe.github.io/core/images/core-64x64.png){: .centered.p-3.bg-secondary.mx-3.mb-3 }
+![Left Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-left.p-3.bg-white.mb-3.mr-3 }
+![Right Octocat](https://techie-joe.github.io/core/images/octocat-64x64.png){: .float-right.p-3.bg-white.mb-3.ml-3 }
+![Small image](https://techie-joe.github.io/core/images/core-64x64.png){: .centered.p-3.bg-secondary.mb-3 }
 
 ---
 {: .mt-3 }
@@ -165,12 +165,11 @@ end
 
 ## Details and summary
 
-Creates a collapsible section of content.
 Use HTML syntax to render the details and summary block.
 
 <details>
-<summary>The details and summary block. <i>(click for more)</i></summary>
-<div class="px-4 py">
+<summary>Create a collapsible section of content. <i>(click for more)</i></summary>
+<div class="px-4 py mb-4">
 <p class="text-grey">Ah, the mighty details and summary block, a collapsible accordion of destiny where content hides like a shy turtle until poked by the click of curiosity. It is the digital equivalent of whispering, “psst, wanna see something cool?” and then rolling out a red carpet of hidden paragraphs, secret snippets, or the occasional diagram that nobody asked for. The summary is the bouncer at the door, deciding whether the reader gets a glimpse inside or stays staring at the title forever, while details hoards all the juicy stuff like a dragon sitting on its markdown gold.</p>
 </div>
 </details>
@@ -182,9 +181,9 @@ Use HTML syntax to render the details and summary block.
 </div>
 </details>
 
-## Bullet list
+## Listing items
 
-###### Ordered list
+### Ordered list
 
 1. First level item.
     1. Second level item.
@@ -196,7 +195,7 @@ Use HTML syntax to render the details and summary block.
 2. The last item.
 
 
-###### Unordered list
+### Unordered list
 
 - First level item.
     - Second level item.
@@ -205,7 +204,7 @@ Use HTML syntax to render the details and summary block.
     - The last item.
 - The last item.
 
-###### Task list
+### Task list
 
 - [x] Completed task.
 - [ ] Pending task.
@@ -217,7 +216,7 @@ Use HTML syntax to render the details and summary block.
     - [ ] Second level.
 - [ ] Last task.
 
-## Definition list
+### Definition list
 
 A definition list is a way of presenting **terms** and their corresponding **definitions** or descriptions in a structured format. It’s often used when you want to explain concepts, glossaries, or pairs of data.
 Use HTML syntax to render the definition list.
@@ -235,7 +234,9 @@ Use HTML syntax to render the definition list.
 
 ## Hyperlink
 
-You can link to [pages]({{ site.baseurl }}/pages "View pages"):
+### Text link
+
+You can link to [pages]({{ site.baseurl }}/pages "View pages").
 {% if site.pages.size > 0 %}
 {% assign sorted_pages = site.pages | sort: "path" -%}
 {% for p in sorted_pages %}
@@ -244,7 +245,7 @@ You can link to [pages]({{ site.baseurl }}/pages "View pages"):
 {%- endif %}
 
 {% if site.posts.size > 0 %}
-... or list all [posts]({{ site.baseurl }}/posts "View posts"):
+... or list all [posts]({{ site.baseurl }}/posts "View posts").
 {% assign sorted_posts = site.posts | sort: "date" | reverse -%}
 {% for p in sorted_posts %}
 - [{{ p.title | default:'(Untitled post)' }}]({{ site.github.url }}{{ p.url }})
@@ -255,12 +256,12 @@ _(Nothing has been posted)_
 
 If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title="The error page">an error page</a>.
 
-## Button link
+### Button link
 
 <a href="#" class="_bt -l -blue">Primary Button Link</a>
 <a href="#" class="_bt -l -flat">Secondary Button Link</a>
 
-## Footnote link
+### Footnote link
 
 - A footnote[^1] creates a list of references at the bottom of a page.
 
@@ -270,7 +271,7 @@ If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title
 
 ## Table
 
-###### Full table
+### Full table
 
 | Left              | Center       | Right      |
 | :---------------- | :----------: | ---------: |
@@ -280,7 +281,7 @@ If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title
 | Zoute drop        | Ok           |       tumm |
 {: .full style="max-width:500px" }
 
-###### Simple table
+### Simple table
 
 | Name              |      Value |
 | :---------------- | ---------: |
@@ -289,7 +290,7 @@ If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title
 | Susan             |     $9,012 |
 {: .full.simple style="max-width:300px" }
 
-###### Borderless table
+### Borderless table
 
 | Left              | Center       | Right      |
 | :---------------- | :----------: | ---------: |
@@ -299,7 +300,7 @@ If you link to a missing page, you'll see <a href="{{ site.baseurl }}/404" title
 | Coute sauce       | Ok           |        uhh |
 {: .full.borderless style="max-width:300px" }
 
-###### Complex table
+### Complex table
 
 You have to use HTML syntax for complex table.
 
@@ -317,7 +318,7 @@ You have to use HTML syntax for complex table.
         </dl>
     </td>
     <td class="text-center">Good</td>
-    <td class="text-right no-wrap">$78,910.12</td>
+    <td class="text-right">$78,910.12</td>
 </tr>
 <tr>
     <td class="text-left">
@@ -327,7 +328,7 @@ You have to use HTML syntax for complex table.
         </dl>
     </td>
     <td class="text-center"><span class="text-pending">Pending</span></td>
-    <td class="text-right no-wrap"><span class="text-pending">- ($1,234.56)</span></td>
+    <td class="text-right"><span class="text-pending">- ($1,234.56)</span></td>
 </tr>
 </table>
 

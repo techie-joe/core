@@ -2,3 +2,4 @@
 /* core fixes */
 .box{padding:.5em;border-radius:6px}
 .bg-primary.text-white { color:#000 !important }
+.footnotes {font-size:.87em;margin-top:32px;padding-top:2rem;border-top:2px solid grey;border-top-color:rgba(128, 128, 128, 0.3);}
