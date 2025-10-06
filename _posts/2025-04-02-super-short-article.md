@@ -1,6 +1,5 @@
 ---
 layout: post
-title: "Some articles are just too short"
 categories: misc
 ---
 # {{ page.title }}
