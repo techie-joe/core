@@ -9,7 +9,7 @@
 body{color:#444}._dark body{color:#bbb}
 dt{margin-top:.5rem}
 th,dt,.hero,h1,h2,h3,h4,h5,h6{color:#000}._dark th,._dark dt,._dark .hero,._dark h1,._dark h2,._dark h3,._dark h4,._dark h5,._dark h6{color:#fff}
-#_main{overflow-y:scroll}
+._app{overflow-y:scroll}
 #_header-bar h1 { display:inline-block; margin:0; border:0; padding:0; font-size:1.2rem; line-height:1.5rem; }
 #_title,#_header-bar #_title a{color:#888}
 #_header-bar #_title a:hover{color: #4660e1}
