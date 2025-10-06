@@ -1,6 +1,6 @@
 # About the Core template
 
-_Core is a classless website template. A no-style, no-frills template – just clean markup, ready for your design._
+_Core is a themeless website template. A no-style, no-frills template – just clean markup, ready for your design._
 
 The Core template is more like a blank canvas than a finished painting. It does not require special classes to be applied to your HTML elements. The main objective is to let you apply your own design system, or layer your framework of choice on top. You can style any page by linking to the stylesheet of your choice.
 

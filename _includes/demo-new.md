@@ -23,7 +23,7 @@ Indentation gives a sense of order and clarity, making an article easier to read
 
 Click the following button to switch between ***light*** and ***dark***.
 
-<a href="#" onclick="event.preventDefault();window.base&&window.base.theme.change()" class="_bt -l -flat" title="Change theme (Ctrl+Alt+T)">Change theme (Ctrl+Alt+T)</a>
+<a href="#" onclick="event.preventDefault();window.base?.theme.change()" class="_bt -l -flat" title="Change theme (Ctrl+Alt+T)">Change theme (Ctrl+Alt+T)</a>
 
 ### Horizontal rule
 
