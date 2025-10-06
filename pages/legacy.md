@@ -1,8 +1,8 @@
 ---
-title: The legacy demo
+title: Legacy
 description: The legacy shows the classic demo page on the Core.
 permalink: legacy
 ---
-###### _Legacy — the classic demo page_
+###### _{{ page.title }} — the classic demo page_
 
 {% include demo-old.md %}
