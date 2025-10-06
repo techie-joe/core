@@ -1,15 +1,11 @@
 {
   "name": "core",
   "version": "0.1.0",
-  "description": "Core is a classless website template.",
+  "description": "Core is a Jekyll theme for GitHub Pages.",
   "keywords": [
-    "css",
     "jekyll",
     "jekyll-theme",
-    "github-pages",
-    "classless",
-    "classless-theme",
-    "classless-css"
+    "github-pages"
   ],
   "homepage": "https://github.com/techie-joe/core#readme",
   "bugs": {

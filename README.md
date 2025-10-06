@@ -1,29 +1,25 @@
-# About the Core template
-
-_Core is a themeless website template. A no-style, no-frills template – just clean markup, ready for your design._
-
-The Core template is more like a blank canvas than a finished painting. It does not require special classes to be applied to your HTML elements. The main objective is to let you apply your own design system, or layer your framework of choice on top. You can style any page by linking to the stylesheet of your choice.
-
-**<a href="https://techie-joe.github.io/core">Preview the template to see what it looks like</a> or [use it today](#usage).**
-
 > [!WARNING]  
 > **This project is under active development. Use with caution. Future update may break your site.**
 
----
+# About the Core
 
-![Thumbnail of the Core template](thumbnail.png)
+_Core is a Jekyll theme for GitHub Pages. **<a href="https://techie-joe.github.io/core">Preview what it looks like</a> or [use it today](#usage).**_
+
+The Core is more like a blank canvas than a finished painting. It's main objective is to let you apply your own design system to your site, or layer your framework of choice on top. You can style any page by linking to the layout of your choice. Write your code in Markdown and HTML, and GitHub Pages will use the content of your repository to build you site.
+
+Find the source code for the Core at GitHub: [techie-joe/core](https://github.com/techie-joe/core)
+
+![Thumbnail of the Core](thumbnail.png)
 
 ## Project philosophy
 
-The project is intended to make it quick and easy for users to build their website. The template should meet the need of vast majority of users out of the box, erring on simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). Needless to say, it should also look neat and tidy.
+The project is intended to make it quick and easy for users to build their website. The project should meet the need of vast majority of users out of the box, erring on simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). Needless to say, themes provided through this project should also look neat and tidy.
 
 ---
 
 ## Usage
 
-### Using Core as a Jekyll theme for GitHub Pages
-
-You can write your content in Markdown or HTML, and your site will be built directly from the code in your repository. To use the template, add the following to your site's `_config.yml`:
+To use the theme, add the following to your site's `_config.yml`:
 
 ```yml
 remote_theme: techie-joe/core
@@ -43,7 +39,6 @@ Core will respect the following variables, if set in your site's `_config.yml`:
 ```yml
 title: # the title of your site (best without the punctuation dot).
 description: # a short description of your site's purpose.
-nickname: # a shortname for your site.
 ```
 
 Additionally, you may choose to set the following optional variables:
