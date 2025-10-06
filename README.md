@@ -9,13 +9,13 @@ The Core is more like a blank canvas than a finished painting. It's main objecti
 
 Find the source code for the Core at GitHub: [techie-joe/core](https://github.com/techie-joe/core)
 
+---
+
 ![Thumbnail of the Core](thumbnail.png)
 
 ## Project philosophy
 
 The project is intended to make it quick and easy for users to build their website. The project should meet the need of vast majority of users out of the box, erring on simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). Needless to say, themes provided through this project should also look neat and tidy.
-
----
 
 ## Usage
 
