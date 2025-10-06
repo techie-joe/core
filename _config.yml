@@ -1,16 +1,20 @@
 remote_theme: techie-joe/core
 # the location of the remote_theme.
 
+# plugins:
+# - jekyll-paginate
+# - jekyll-sitemap
+
 title: Core
 description: Core is a Jekyll theme for GitHub Pages.
 # title: # the title of your site (best without the punctuation dot).
 # description: # a short description of your site's purpose.
 
-# show_downloads: # true or false (unquoted).
-# indicate whether to provide a download URL.
-
 # google_analytics: # your Google Analytics tracking ID.
 # to track your website using Google Analytics.
+
+# show_downloads: # true or false (unquoted).
+# indicate whether to provide a download URL.
 
 # github:
 #   zip_url: http://example.com/download.zip
@@ -21,10 +25,6 @@ color_scheme: light dark
 
 sass:
   style: compressed
-
-# plugins:
-# - jekyll-paginate
-# - jekyll-sitemap
 
 # exclude these files from Jekyll production site (_site).
 exclude:

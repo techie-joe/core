@@ -44,11 +44,11 @@ description: # a short description of your site's purpose.
 Additionally, you may choose to set the following optional variables:
 
 ```yml
-show_downloads: # true or false (unquoted).
-# indicate whether to provide a download URL.
-
 google_analytics: # your Google Analytics tracking ID.
 # to track your website using Google Analytics.
+
+show_downloads: # true or false (unquoted).
+# indicate whether to provide a download URL.
 ```
 
 ### Stylesheet
