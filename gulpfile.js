@@ -19,7 +19,7 @@ const
     log(logs.join('\n'));
     this.emit('end');
   },
-  isEmpty = (...oo) => oo.every(o => typeof o === 'object' && o.length > 0),
+  isEmpty = (...oo) => oo.every(o => Array.isArray(o) && o.length > 0),
   { src, dest, series, parallel, watch } = require('gulp'),
   pug = require('gulp-pug'), // read pug write html,php,txt,md
   sass = require('gulp-sass')(require("sass")), // read sass write css
@@ -34,10 +34,10 @@ const
   },
   _watch = (fn, src, dest, opt = watchOpt) => function watcher() {
     if (isEmpty(src, dest)) {
-      log(`Watching: ${redMessage('[Error]')}\n- [src]: ${src}\n- [dest]: ${dest}`);
+      log(`Watching: ${redMessage('[Error]')}\n- [src]: ${src || '(undefined)'}\n- [dest]: ${dest || '(undefined)'}`);
     }
     else {
-      log(`Watching:\n${src.map(item => '- ' + item).join('\n')}`);
+      log(`Watching:${Array.isArray(src)?src.map(item => '\n- ' + item).join('\n'):' '+src}`);
       watch(src, opt, fn(src, dest));
     }
   },
