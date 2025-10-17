@@ -13,7 +13,7 @@ The Core provides a foundation that allows you to **easily apply your own design
 
 ## Our Philosophy
 
-The primary goal of this project is to provide users with a **quick and easy way to build a website**. We aim to meet the needs of the vast majority of users out of the box, by prioritizing **simplicity** rather than flexibility. **Ready-made themes and layouts** provided through this project should look neat and tidy. For those with specific needs or wish to customize further, they may add custom CSS or modify the default layout.
+The primary goal of this project is to provide users with a **quick and easy way to build a website**. We aim to meet the needs of the vast majority of users out of the box, by prioritizing **simplicity** rather than flexibility. For those with specific needs or wish to customize further, they may add custom CSS or modify the default layout.
 
 ## Usage
 
