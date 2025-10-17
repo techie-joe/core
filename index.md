@@ -1,6 +1,6 @@
 ---
 title: Home
-description: Introduction to the Core template.
+description: Introduction to the Core.
 layout: home
 ---
 
