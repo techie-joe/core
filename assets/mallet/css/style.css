@@ -13,4 +13,4 @@ th,dt,.hero,h1,h2,h3,h4,h5,h6{color:#000}._dark th,._dark dt,._dark .hero,._dark
 #_header-bar h1 { display:inline-block; margin:0; border:0; padding:0; font-size:1.2rem; line-height:1.5rem; }
 #_title,#_header-bar #_title a{color:#888}
 #_header-bar #_title a:hover{color: #4660e1}
-#_credit { font-size: .83rem; position: absolute; position: fixed; bottom: 6px; right: 16px; left: auto; top: auto; padding: .2rem .4rem; box-shadow: 0 0 4px #0007; border-radius: 5px; color: #fff; text-decoration: none; background: #000; }
+._credit { font-size: .83rem; position: absolute; position: fixed; bottom: 6px; right: 16px; left: auto; top: auto; padding: .2rem .4rem; box-shadow: 0 0 4px #0007; border-radius: 5px; color: #fff; text-decoration: none; background: #000; }

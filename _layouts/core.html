@@ -2,11 +2,9 @@
 # html document.
 ---
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no_js {{ page.layout }}_layout">
-  <!--
-    page.path   : {{ page.path }}
-    page.layout : {{ page.layout }}
-  -->
+<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="_{{ page.layout }}_layout">
+  <!-- page.layout : jekyll/{{ page.layout }} -->
+  <!-- page.path   : {{ page.path }} -->
   <head>
     <meta charset="{{ site.encoding | default: 'utf-8' }}" />
     {% seo %}
@@ -14,22 +12,20 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5.0,shrink-to-fit=no" />
     <meta id="_theme-color"  name="theme-color"  content="{{ page.theme_color | default: site.theme_color | default: '' }}" />
     <meta id="_color-scheme" name="color-scheme" content="{{ page.color_scheme | default: site.color_scheme | default: 'light dark' }}" />
-    {% include custom-head.html %}
     <link id="_style" rel="stylesheet" href="{{ site.github.url }}/assets/core/css/style.css?v={{ site.github.build_revision }}" />
+    {% include custom-head.html %}
     <!--[if lt IE 9]><script src="//unpkg.com/html5shiv@3.7.3/dist/html5shiv.min.js"><![endif]-->
   </head>
   <body>
-    <div class="_view"><div class="_layout">
-      <main id="_main"><article id="_article">
-        {% if page.url == '' or page.url == '/' %}{% else -%}
-          {% if page.show_title != 'hide' and site.show_title != 'hide' and site.title and site.title != page.title -%}
-            <h1 id="_title"><a href="{{ site.github.url }}">{{ site.title }}</a></h1>
-          {%- endif %}
+    <div class="_view"><div class="_layout"><main id="_main"><article id="_article">
+      {% if page.url == '' or page.url == '/' %}{% else -%}
+        {% if page.show_title != 'hide' and site.show_title != 'hide' and site.title and site.title != page.title -%}
+          <h1 id="_title"><a href="{{ site.github.url }}">{{ site.title }}</a></h1>
         {%- endif %}
-        {{ content }}
-      </article></main>
-    </div></div>
-    <div>{% include credit.html %}</div>
+      {%- endif %}
+      {{ content }}
+    </article></main></div></div>
+    {% include credit.html %}
     <script src="{{ site.github.url }}/assets/core/js/script.js?v={{ site.github.build_revision }}"></script>
     {% include anchors.html %}
     {% include custom-body.html %}
