@@ -1,10 +1,1 @@
-<!-- favicons -->
-<link rel="shortcut icon" type="image/x-icon" href="{{ site.github.url }}/assets/icon/favicon.ico?v{{ site.github.build_revision }}" sizes="any" />
-<link rel="icon" type="image/png" sizes="16x16" href="{{ site.github.url }}/assets/icon/favicon-16x16.png?v{{ site.github.build_revision }}" />
-<link rel="icon" type="image/png" sizes="32x32" href="{{ site.github.url }}/assets/icon/favicon-32x32.png?v{{ site.github.build_revision }}" />
-<link rel="icon" type="image/png" sizes="192x192" href="{{ site.github.url }}/assets/icon/android-chrome-192x192.png?v{{ site.github.build_revision }}" />
-<link rel="icon" type="image/png" sizes="512x512" href="{{ site.github.url }}/assets/icon/android-chrome-512x512.png?v{{ site.github.build_revision }}">
-<link rel="apple-touch-icon" href="{{ site.github.url }}/assets/icon/apple-touch-icon.png?v{{ site.github.build_revision }}">
-
-<!-- manifest -->
-<link rel="manifest" href="{{ '/manifest.json' | relative_url }}?v{{ site.github.build_revision }}" />
+<link rel="manifest" href="{{ site.github.url }}/manifest.json?v={{ site.version || site.github.build_revision }}" />
