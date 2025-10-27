@@ -4,15 +4,17 @@
 theme        : {{ site.theme }}
 remote_theme : {{ site.remote_theme }}
 
+version      : {{ site.version }}
+
 title        : {{ site.title }}
 description  : {{ site.description }}
-nickname     : {{ site.nickname }}
 
 google_analytics     : {{ site.google_analytics }}
 cloudflare_analytics : {{ site.cloudflare_analytics }}
 
 theme_color  : {{ site.theme_color | jsonify }}
 color_scheme : {{ site.color_scheme }}
+ghost        : {{ site.ghost }}
 
 time          : {{ site.time }}
 lang          : {{ site.lang }}
