@@ -4,6 +4,10 @@ remote_theme: techie-joe/core
 # plugins:
 # - jekyll-paginate
 # - jekyll-sitemap
+# - jekyll-remote-theme
+# add jekyll-remote-theme to the plugins list.
+
+version: '0.0.2'
 
 title: Core
 description: Core is a Jekyll theme for GitHub Pages.
@@ -20,6 +24,7 @@ description: Core is a Jekyll theme for GitHub Pages.
 #   zip_url: http://example.com/download.zip
 #   another_url: another_value
 
+# theme
 theme_color: '#222'
 color_scheme: light dark
 
