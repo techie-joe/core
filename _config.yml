@@ -17,6 +17,9 @@ description: Core is a Jekyll theme for GitHub Pages.
 # google_analytics: # your Google Analytics tracking ID.
 # to track your website using Google Analytics.
 
+# cloudflare_analytics: # your Cloudflare Analytics tracking ID.
+# to track your website using Cloudflare Analytics.
+
 # show_downloads: # true or false (unquoted).
 # indicate whether to provide a download URL.
 
@@ -27,6 +30,7 @@ description: Core is a Jekyll theme for GitHub Pages.
 # theme
 theme_color: '#222'
 color_scheme: light dark
+ghost: bG9jYWxob3N0LHRlY2hpZS1qb2UuZ2l0aHViLmlv
 
 sass:
   style: compressed
@@ -53,6 +57,7 @@ exclude:
 - gulplist.js
 - site
 - CNAME
+- "*.x"
 - "*.ignore"
 - ".backup"
 - ".localhost"
