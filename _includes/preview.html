@@ -1,0 +1,420 @@
+<p class="hero">Hero statement with <span class="text-red">a red text</span> would be exciting</p>
+
+<h1>Heading 1</h1>
+
+<p><img src="/core/images/299-400x300.jpg" alt="Featured image" class="float-right ml mb" width="400" height="300" /></p>
+
+<p class="text-justify big-first">Writing an article can be exciting when you can add few things here and there. The <code class="language-plaintext highlighter-rouge">big-first</code> class will enlarge the first letter of a paragraph. While <code class="language-plaintext highlighter-rouge">text-justify</code> neatly aligns your text to its container. To nudge the first line of a paragraph, use the <code class="language-plaintext highlighter-rouge">indent</code> class. Indentation gives a sense of order and clarity, making an article easier to read. Include images and <a href="#" onclick="event.preventDefault();">hyperlinks</a> to make things more engaging.</p>
+
+<p><strong>Leave whitespace between paragraphs for clarity.</strong></p>
+  
+<p class="indent text-justify text-grey"><strong>You'll notice some gibberish text in this demo.</strong> It's simply placeholder content, added to help you visualize how the layout, spacing, and typography will appear once real content is in place. The text itself doesn't carry any meaning, it's just there to fill the empty areas and make the overall design feel balanced and complete. Each line and section tells a “different story”, though none of it is meant to be understood literally. It's more of a creative illusion, a way to showcase how color, contrast, and structure come together to create a theme. It honors the “look and feel”, a metaphor for how design can shift and vary in perspective. That's the beauty of visual design. Every layout tells its own silent story, even when the words themselves mean nothing at all.</p>
+
+<blockquote>
+  <p>Have a look at <a href="./legacy.html">the legacy</a> for the classic demo page.</p>
+</blockquote>
+
+<hr />
+
+<!-- Comment blocks will not appear on the screen. -->
+<!-- {% comment %} Liquid comments will not be rendered. {% endcomment %} -->
+
+<p class="text-justify">There's a <strong>horizontal rule</strong> above this sentence, followed by a <strong>comment block</strong>. Comment blocks will not appear on the screen, and Liquid comments will not be rendered.</p>
+
+<h2>Styling texts</h2>
+
+<ul>
+  <li>
+    <p>Text can be
+<strong>bold</strong>,
+<em>italic</em>,
+or <strong><em>both</em></strong>. You can also
+<del>strikethrough</del> texts,
+or add some <code class="language-plaintext highlighter-rouge">code</code>.</p>
+  </li>
+  <li>
+    <p>Use HTML to render
+<u>underline</u>,
+<abbr title="Abbreviation">abbr</abbr>,
+<samp>samp</samp>, and
+<mark>mark</mark>.</p>
+  </li>
+  <li>
+    <p>Color them 
+<b class="text-primary">primary</b>
+<b class="text-secondary">secondary</b>
+<b class="text-pending">pending</b>
+<b class="text-blue">blue</b>
+<b class="text-slategray">slategray</b>
+<b class="text-gray">gray</b>
+<b class="text-green">green</b>
+<b class="text-purple">purple</b>
+<b class="text-red">red</b>
+<b class="text-orange">orange</b>
+<b class="text-orange-light">orange-light</b>
+<b class="text-yellow">yellow</b>.</p>
+  </li>
+</ul>
+
+<h2>Heading 2</h2>
+
+<p class="text-grey">Not too loud, not too small. It's like the middle child of headings: always trying, never crying. H2 organizes sections, but secretly dreams of being an H1 someday. Don't tell it the truth. Let it dream.</p>
+
+<h3>Heading 3</h3>
+
+<p class="text-grey">The Mysterious H3 is like that friend who wears sunglasses indoors. Mysterious. Cool. A bit unnecessary sometimes, but when used right — chef's kiss! H3 loves details and subtopics. But if you go too deep, suddenly you're in H6 territory, and nobody reads that far.</p>
+
+<h4>Heading 4</h4>
+
+<p class="text-grey">H4 is forgotten like socks at Christmas. Technically useful, but no one really cheers for it. You'll use it if you have to, like adding extra layers to a report nobody asked for. Poor H4. Always invited, never remembered.</p>
+
+<h5>Heading 5</h5>
+
+<p class="text-grey">H5 is that tiny notebook you bought to look organized but never actually use. It's small, it's cute, it's there — but honestly, body text is almost the same size, so why bother? H5 knows its fate but accepts it gracefully.</p>
+
+<h6>Heading 6</h6>
+
+<p class="text-grey">And then comes H6, the heading so small it whispers. Nobody notices it. Even search engines squint and go, “Wait, is that… a heading?” H6 is like writing a title with invisible ink: only the bravest readers will ever see it.</p>
+
+<h2>Code blocks</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Markdown render `code blocks` as is.
+    white-spaces, new lines, tabs and all. 
+
+Long, single-line `code blocks` should not wrap. They should remain on a single line instead of breaking into multiple lines. If the line is too long to fit within the visible width of the page, the reader should be able to scroll horizontally to see the rest of it. This line should be long enough to demonstrate this.
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Javascript code with syntax highlighting</span>
+<span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">lang</span><span class="p">(</span><span class="nx">l</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">dateformat</span><span class="p">.</span><span class="nx">i18n</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">./lang/</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">l</span><span class="p">)</span>
+  <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Ruby code with syntax highlighting</span>
+<span class="no">GitHubPages</span><span class="o">::</span><span class="no">Dependencies</span><span class="p">.</span><span class="nf">gems</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">gem</span><span class="p">,</span> <span class="n">version</span><span class="o">|</span>
+  <span class="n">s</span><span class="p">.</span><span class="nf">add_dependency</span><span class="p">(</span><span class="n">gem</span><span class="p">,</span> <span class="s2">"= </span><span class="si">#{</span><span class="n">version</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h2>Including images</h2>
+
+<p><img src="/core/images/299-1024x368.jpg" alt="Large image" class="full-width" /></p>
+
+<blockquote class="text-small mt-0">
+  <p>Images for this demo came from <a href="https://picsum.photos/" target="_blank">picsum.photos</a>.</p>
+</blockquote>
+
+<p>Use the <code class="language-plaintext highlighter-rouge">width-full</code> class for large images.</p>
+
+<p>For smaller images, align them using floats and margins: <code class="language-plaintext highlighter-rouge">float-left.mr.mb</code>, <code class="language-plaintext highlighter-rouge">float-right.ml.mb</code> or <code class="language-plaintext highlighter-rouge">centered.mb</code>.</p>
+
+<hr class="mb-3" />
+
+<p><img src="/core/images/octocat-64x64.png" alt="Left Octocat" class="float-left mr mb pa bg-white" width="64" height="64" />
+<img src="/core/images/octocat-64x64.png" alt="Right Octocat" class="float-right ml mb pa bg-white" width="64" height="64" />
+<img src="/core/images/core-64x64.png" alt="Small image" class="centered mb pa bg-white" width="64" height="64" /></p>
+
+<hr class="mt-3" />
+
+<h2>Styling blockquotes</h2>
+
+<blockquote>
+  <p>This is a blockquote.</p>
+</blockquote>
+
+<blockquote class="border-green">
+  <p>You can add styles to a blockquote.</p>
+  <blockquote class="border-yellow">
+    <p>“You can stack them too.” — <em>Says the Author</em></p>
+  </blockquote>
+</blockquote>
+
+<blockquote class="border-red text-pending">
+  <p>Try other mix as well.</p>
+</blockquote>
+
+<h2>Box wrappers</h2>
+
+<p class="box ba text-center">Wrap texts in a <code class="language-plaintext highlighter-rouge">box.ba</code></p>
+
+<p class="box bg-primary text-white text-center">Wrap in <code class="language-plaintext highlighter-rouge">box.bg-primary.text-white</code></p>
+
+<p class="box bg-red text-white text-center">Try other mix as well</p>
+
+<h2>Details and summary</h2>
+
+<p>Use HTML syntax to render the details and summary block.</p>
+
+<details>
+<summary>Create a collapsible section of content. <i>(click for more)</i></summary>
+<div class="details">
+<p class="text-grey text-justify">Ah, the mighty details and summary block, a collapsible accordion of destiny where content hides like a shy turtle until poked by the click of curiosity. It is the digital equivalent of whispering, “psst, wanna see something cool?” and then rolling out a red carpet of hidden paragraphs, secret snippets, or the occasional diagram that nobody asked for. The summary is the bouncer at the door, deciding whether the reader gets a glimpse inside or stays staring at the title forever, while details hoards all the juicy stuff like a dragon sitting on its markdown gold.</p>
+</div>
+</details>
+
+<details class="box ba">
+<summary>Style them with <code>box.ba</code> wrappers. <i>(click for more)</i></summary>
+<div class="details">
+<p class="text-grey text-justify">This block expands like curtains on opening night, then folds back up as if nothing ever happened, gaslighting your memory of what you just saw. Authors toss long-winded explanations, secret Easter eggs, or poorly formatted cat ASCII art inside it, knowing only the brave will click. In its most chaotic form, the details block nests within itself, collapsing collapsibles within collapsibles until the reader spirals into an abyss of disclosure toggles, wondering whether the summary is summary enough to summarize the summaries.</p>
+</div>
+</details>
+
+<h2>Ordered list</h2>
+
+<ol>
+  <li>First level item.
+    <ol style="list-style:lower-alpha">
+      <li>Second level item.
+        <ol style="list-style:lower-roman">
+          <li>Third level item.</li>
+          <li>Other item.</li>
+          <li>Last item.</li>
+        </ol>
+      </li>
+      <li>Other item.</li>
+      <li>Last item.</li>
+    </ol>
+  </li>
+  <li>Other item.</li>
+  <li>Last item.</li>
+</ol>
+
+<h2>Unordered list</h2>
+
+<ul>
+  <li>First level item.
+    <ul>
+      <li>Second level item.
+        <ul>
+          <li>Third level item.</li>
+          <li>Other item.</li>
+          <li>Last item.</li>
+        </ul>
+      </li>
+      <li>Other item.</li>
+      <li>Last item.</li>
+    </ul>
+  </li>
+  <li>Other item.</li>
+  <li>Last item.</li>
+</ul>
+
+<h2>Task list</h2>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Completed task.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Pending task.
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Second level.</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Second level.
+        <ul class="task-list">
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Third level.</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Other task.</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Last task.</li>
+        </ul>
+      </li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Last task.</li>
+    </ul>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Last task.</li>
+</ul>
+
+<h2>Definition list</h2>
+
+<dl>
+<dt>Term</dt>
+<dd>Definition or description.</dd>
+<dt>CSS</dt>
+<dd>A stylesheet language for styling web pages.</dd>
+<dt>JavaScript</dt>
+<dd>A programming language that adds interactivity to websites.</dd>
+</dl>
+
+<h2>Button links</h2>
+
+<p>
+<a href="#" onclick="event.preventDefault();" class="button bg-primary border-primary text-white">Primary</a>
+<a href="#" onclick="event.preventDefault();" class="button bg-secondary border-secondary text-black">Secondary</a>
+<a href="#" onclick="event.preventDefault();" class="button">Button Link</a>
+<span class="text-gray">&bull;</b>
+<a href="#" onclick="event.preventDefault();theme.change()" class="button text-secondary" title="Change Theme (Alt+T)">Change Theme</a></p>
+
+<h2>Footnote links</h2>
+
+<p>A footnote<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> creates a list of references at the bottom of a page.</p>
+
+<p>Normally you would use number as reference, you can also use word<sup id="fnref:note" role="doc-noteref"><a href="#fn:note" class="footnote" rel="footnote">2</a></sup> as reference.</p>
+
+<p>Footnote can also have multiple lines<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>.</p>
+
+<h2>Table styles</h2>
+
+<h3 id="normal-table">Normal table</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Name</th>
+      <th style="text-align: center">Membership</th>
+      <th style="text-align: right">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Gary</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right">$1,124</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Howard</td>
+      <td style="text-align: center">Premium</td>
+      <td style="text-align: right">$5,678</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Sally</td>
+      <td style="text-align: center">Gold</td>
+      <td style="text-align: right">$9,012</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="full-table">Full table</h3>
+
+<table class="full-width">
+  <thead>
+    <tr>
+      <th style="text-align: left">Left</th>
+      <th style="text-align: center">Center</th>
+      <th style="text-align: right">Right</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Good fish</td>
+      <td style="text-align: center">Ok</td>
+      <td style="text-align: right">nice</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Plenty box</td>
+      <td style="text-align: center">Out of stock</td>
+      <td style="text-align: right">yeah</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Biscoite</td>
+      <td style="text-align: center">Ok</td>
+      <td style="text-align: right">hmm</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Zoute drop</td>
+      <td style="text-align: center">Ok</td>
+      <td style="text-align: right">tumm</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="simple-table">Simple table</h3>
+
+<table class="simple">
+  <thead>
+    <tr>
+      <th style="text-align: left">Name</th>
+      <th style="text-align: right">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Ahmad</td>
+      <td style="text-align: right">$1,124</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Greg</td>
+      <td style="text-align: right">$5,678</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Susan</td>
+      <td style="text-align: right">$9,012</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Borderless table</h3>
+
+<table class="borderless">
+  <thead>
+    <tr>
+      <th style="text-align: left">Items</th>
+      <th style="text-align: right">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Good leaf</td>
+      <td style="text-align: right">Ok</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Plenty ticks</td>
+      <td style="text-align: right">Ready</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Zapper</td>
+      <td style="text-align: right">Pending</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Coute sauce</td>
+      <td style="text-align: right">Ok</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>HTML table</h3>
+
+<table class="full-width" style="max-width:500px">
+<thead>
+  <tr>
+      <th class="text-left">Label</th>
+      <th class="text-center">Status</th>
+      <th class="text-right">Value</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+      <td class="text-left">
+          <dl>
+          <dt>Item name</dt>
+          <dd>And its description.</dd>
+          </dl>
+      </td>
+      <td class="text-center text-green">Good</td>
+      <td class="text-right text-green">$78,910.12</td>
+  </tr>
+  <tr>
+      <td class="text-left">
+          <dl>
+          <dt>Another item</dt>
+          <dd>And its description.</dd>
+          </dl>
+      </td>
+      <td class="text-center text-pending">Pending</td>
+      <td class="text-right text-red">- ($1,234.56)</td>
+  </tr>
+</tbody>
+</table>
+
+<h2 id="footnotes">Footnotes</h2>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>A typical footnote reference contains: The author's name, the article title, and publication details.<br/>
+For example: <em>John Smith</em>, <strong>Modern Web Design</strong> (New York: TechPress, 2023), page 45.<a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:note" role="doc-endnote">
+      <p>Named footnotes will still render with numbers instead of the text but allow easier identification and linking. <a href="#fnref:note" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Every new line in footnote should be prefixed:<br/>
+with 2 space or 4 space indentation. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
